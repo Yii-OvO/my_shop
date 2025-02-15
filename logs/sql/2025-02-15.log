@@ -20,3 +20,11 @@ Stack:
 2025-02-15 20:41:32.544 [DEBU] {6c82fdea2a622418d0c5080be874c4d0} [  1 ms] [default] [myshop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
 2025-02-15 20:41:32.545 [DEBU] {6c82fdea2a622418d0c5080be874c4d0} [  0 ms] [default] [myshop] [rows:0  ] [txid:2] UPDATE `rotation_info` SET `deleted_at`='2025-02-15 20:41:32' WHERE (`id`=11) AND `deleted_at` IS NULL
 2025-02-15 20:41:32.546 [DEBU] {6c82fdea2a622418d0c5080be874c4d0} [  1 ms] [default] [myshop] [rows:0  ] [txid:2] COMMIT
+2025-02-15 22:12:45.114 [DEBU] {606e771925672418a56154064e54c448} [  3 ms] [default] [myshop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-15 22:12:45.120 [DEBU] {606e771925672418a56154064e54c448} [  4 ms] [default] [myshop] [rows:23 ] [txid:1] SHOW TABLES
+2025-02-15 22:12:45.122 [DEBU] {606e771925672418a56154064e54c448} [  2 ms] [default] [myshop] [rows:7  ] [txid:1] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-15 22:12:45.123 [DEBU] {606e771925672418a56154064e54c448} [  0 ms] [default] [myshop] [rows:0  ] [txid:1] UPDATE `rotation_info` SET `pic_url`='https://loremflickr.com/400/400?lock=3629369385815027',`link`='https://unlined-chops.info/',`sort`=90,`updated_at`='2025-02-15 22:12:45' WHERE (`id`=11) AND `deleted_at` IS NULL
+2025-02-15 22:12:45.125 [DEBU] {606e771925672418a56154064e54c448} [  1 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
+2025-02-15 22:13:26.251 [DEBU] {accf9aad2e672418a6615406d9ffbb97} [  1 ms] [default] [myshop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-15 22:13:26.253 [DEBU] {accf9aad2e672418a6615406d9ffbb97} [  1 ms] [default] [myshop] [rows:1  ] [txid:2] UPDATE `rotation_info` SET `pic_url`='https://loremflickr.com/400/400?lock=3629369385815027',`link`='https://unlined-chops.info/',`sort`=90,`updated_at`='2025-02-15 22:13:26' WHERE (`id`=10) AND `deleted_at` IS NULL
+2025-02-15 22:13:26.264 [DEBU] {accf9aad2e672418a6615406d9ffbb97} [ 11 ms] [default] [myshop] [rows:0  ] [txid:2] COMMIT

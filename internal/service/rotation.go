@@ -15,6 +15,8 @@ type (
 		Create(ctx context.Context, in model.RotationCreateInput) (out model.RotationCreateOutput, err error)
 		// Delete 删除
 		Delete(ctx context.Context, id uint) error
+		// Update 修改
+		Update(ctx context.Context, in model.RotationUpdateInput) error
 	}
 )
 
