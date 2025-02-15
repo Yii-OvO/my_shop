@@ -2,7 +2,9 @@ package rotation
 
 import (
 	"context"
+	"github.com/gogf/gf/v2/database/gdb"
 	"github.com/gogf/gf/v2/encoding/ghtml"
+	"github.com/gogf/gf/v2/frame/g"
 	"my_shop/internal/dao"
 	"my_shop/internal/model"
 	"my_shop/internal/service"
@@ -30,4 +32,13 @@ func (s *sRotation) Create(ctx context.Context, in model.RotationCreateInput) (o
 	return model.RotationCreateOutput{RotationId: int(lastInsertID)}, err
 }
 
-//// Dele
+// Delete 删除
+func (s *sRotation) Delete(ctx context.Context, id uint) error {
+	return dao.RotationInfo.Transaction(ctx, func(ctx context.Context, tx gdb.TX) error {
+		// 删除内容
+		_, err := dao.RotationInfo.Ctx(ctx).Where(g.Map{
+			dao.RotationInfo.Columns().Id: id,
+		}).Delete()
+		return err
+	})
+}
