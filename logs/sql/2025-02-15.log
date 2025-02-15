@@ -1,0 +1,15 @@
+2025-02-15 00:24:37.658 [DEBU] {383e627cc21f2418645c12666cdbf3e7} [  6 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-15 00:24:37.665 [ERRO] {383e627cc21f2418645c12666cdbf3e7} [  5 ms] [default] [myshop] [rows:0  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://experienced-charlatan.name','https://picsum.photos/seed/7YO76wJz32/2491/723',1145064582001393,'2025-02-15 00:24:37','2025-02-15 00:24:37') 
+Error: Error 1264 (22003): Out of range value for column 'sort' at row 1 
+Stack:
+1.  my_shop/internal/logic/rotation.(*sRotation).Create
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/logic/rotation/rotation.go:25
+2.  my_shop/internal/controller.(*cRotation).Create
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/controller/rotation.go:18
+
+2025-02-15 00:25:46.236 [DEBU] {b8a32177d21f2418655c12663b9bd635} [ 17 ms] [default] [myshop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://friendly-hose.info/','https://picsum.photos/seed/XpNiv/1830/2750',1,'2025-02-15 00:25:46','2025-02-15 00:25:46') 
+2025-02-15 00:28:33.154 [DEBU] {441e902df71f24185ec585414c72b1e1} [  3 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-15 00:28:33.161 [DEBU] {441e902df71f24185ec585414c72b1e1} [  5 ms] [default] [myshop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://inferior-euphonium.name','https://picsum.photos/seed/XPxbFGRxd/639/3687',2,'2025-02-15 00:28:33','2025-02-15 00:28:33') 
+2025-02-15 00:29:26.773 [DEBU] {ac0494c7052024185fc58541f0958d4b} [ 13 ms] [default] [myshop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://loremflickr.com/400/400?lock=8464798613436349','https://round-squid.biz/',61,'2025-02-15 00:29:26','2025-02-15 00:29:26') 
+2025-02-15 00:43:28.080 [DEBU] {785dff37c8202418e0a078481453b436} [  4 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-15 00:43:28.086 [DEBU] {785dff37c8202418e0a078481453b436} [  5 ms] [default] [myshop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://loremflickr.com/400/400?lock=777583117407948','https://partial-scratch.com/',59,'2025-02-15 00:43:28','2025-02-15 00:43:28') 
