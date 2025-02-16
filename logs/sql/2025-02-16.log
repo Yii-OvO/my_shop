@@ -1,0 +1,20 @@
+2025-02-16 17:28:23.503 [DEBU] {b413fc3235a624189333de14ad42a310} [ 12 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-16 17:28:23.507 [DEBU] {b413fc3235a624189333de14ad42a310} [  2 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-16 17:28:23.509 [DEBU] {b413fc3235a624189333de14ad42a310} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:28:23.513 [DEBU] {b413fc3235a624189333de14ad42a310} [  3 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-16 17:28:23.514 [DEBU] {b413fc3235a624189333de14ad42a310} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:31:58.814 [DEBU] {e0a7055567a624186128521cc79730a5} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-16 17:31:58.818 [DEBU] {e0a7055567a624186128521cc79730a5} [  2 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-16 17:31:58.819 [DEBU] {e0a7055567a624186128521cc79730a5} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:31:58.820 [DEBU] {e0a7055567a624186128521cc79730a5} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-16 17:31:58.821 [DEBU] {e0a7055567a624186128521cc79730a5} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:37:38.116 [DEBU] {84ebec54b6a62418bcc1bd20273c44fa} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-16 17:37:38.119 [DEBU] {84ebec54b6a62418bcc1bd20273c44fa} [  1 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-16 17:37:38.121 [DEBU] {84ebec54b6a62418bcc1bd20273c44fa} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:37:38.121 [DEBU] {84ebec54b6a62418bcc1bd20273c44fa} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-16 17:37:38.122 [DEBU] {84ebec54b6a62418bcc1bd20273c44fa} [  0 ms] [default] [myshop] [rows:4  ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:39:28.842 [DEBU] {8c85c81cd0a62418605f5c4a5b5b0120} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-16 17:39:28.846 [DEBU] {8c85c81cd0a62418605f5c4a5b5b0120} [  1 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-16 17:39:28.848 [DEBU] {8c85c81cd0a62418605f5c4a5b5b0120} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-16 17:39:28.849 [DEBU] {8c85c81cd0a62418605f5c4a5b5b0120} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-16 17:39:28.849 [DEBU] {8c85c81cd0a62418605f5c4a5b5b0120} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
