@@ -31,3 +31,23 @@
 2025-02-20 01:30:30.432 [DEBU] {282dacfa41ac251807072b484c402f69} [  2 ms] [default] [myshop] [rows:9  ] [txid:1] SHOW FULL COLUMNS FROM `position_info`
 2025-02-20 01:30:30.434 [DEBU] {282dacfa41ac251807072b484c402f69} [  1 ms] [default] [myshop] [rows:1  ] [txid:1] UPDATE `position_info` SET `deleted_at`='2025-02-20 01:30:30' WHERE (`id`=3) AND `deleted_at` IS NULL
 2025-02-20 01:30:30.437 [DEBU] {282dacfa41ac251807072b484c402f69} [  3 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
+2025-02-20 02:36:39.285 [DEBU] {fc50300cdeaf25184485273845084131} [ 14 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-20 02:36:39.295 [DEBU] {fc50300cdeaf25184485273845084131} [  8 ms] [default] [myshop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('桓丽芳','bfc3e8e7722393fd2a65016c9c0726a5','99','2025-02-20 02:36:39','2025-02-20 02:36:39','NuMMQRRT3G',10) 
+2025-02-20 02:37:32.713 [DEBU] {084a767deaaf25184585273880dc6d7f} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-20 02:37:32.715 [DEBU] {084a767deaaf25184585273880dc6d7f} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,10
+2025-02-20 02:37:32.716 [DEBU] {084a767deaaf25184585273880dc6d7f} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2025-02-20 02:37:32.717 [DEBU] {084a767deaaf25184585273880dc6d7f} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`name`,`role_ids`,`is_admin`,`created_at`,`updated_at` FROM `admin_info` LIMIT 0,10
+2025-02-20 02:37:51.142 [DEBU] {986b1bc8eeaf2518468527387df11165} [  0 ms] [default] [myshop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 02:37:51.144 [DEBU] {986b1bc8eeaf2518468527387df11165} [  0 ms] [default] [myshop] [rows:1  ] [txid:1] UPDATE `admin_info` SET `name`='禹依诺',`password`='88e77c551bca4379634aac471a525614',`role_ids`='62',`updated_at`='2025-02-20 02:37:51',`user_salt`='D5Jga1nqJx',`is_admin`=78 WHERE `id`=16
+2025-02-20 02:37:51.155 [DEBU] {986b1bc8eeaf2518468527387df11165} [ 10 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
+2025-02-20 02:38:11.986 [DEBU] {689074a2f3af251847852738d54ab3b1} [  0 ms] [default] [myshop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 02:38:11.988 [DEBU] {689074a2f3af251847852738d54ab3b1} [  1 ms] [default] [myshop] [rows:1  ] [txid:2] DELETE FROM `admin_info` WHERE `id`=16
+2025-02-20 02:38:11.999 [DEBU] {689074a2f3af251847852738d54ab3b1} [ 11 ms] [default] [myshop] [rows:0  ] [txid:2] COMMIT
+2025-02-20 02:38:54.709 [ERRO] {30193c94fdaf251848852738dd4c5c9e} [ 11 ms] [default] [myshop] [rows:0  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('李四','639ca3b2a7684f6feacc7ba60c170d10','67','2025-02-20 02:38:54','2025-02-20 02:38:54','yLRfSLkLXe',61) 
+Error: Error 1062 (23000): Duplicate entry '李四' for key 'admin_info.name_unique' 
+Stack:
+1.  my_shop/internal/logic/admin.(*sAdmin).Create
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/logic/admin/admin.go:36
+2.  my_shop/internal/controller.(*cAdmin).Create
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/controller/admin.go:18
+
