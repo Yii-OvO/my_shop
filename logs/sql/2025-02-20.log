@@ -1,0 +1,33 @@
+2025-02-20 01:25:16.751 [DEBU] {ace4e0f1f8ab25189f6fe02148720d05} [  4 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `position_info`
+2025-02-20 01:25:16.759 [DEBU] {ace4e0f1f8ab25189f6fe02148720d05} [  6 ms] [default] [myshop] [rows:1  ] INSERT INTO `position_info`(`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`) VALUES('1','1','1',1,1,'2025-02-20 01:25:16','2025-02-20 01:25:16') 
+2025-02-20 01:26:20.231 [DEBU] {6098b6b907ac2518a06fe0213c5beb85} [  2 ms] [default] [myshop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 01:26:20.233 [DEBU] {6098b6b907ac2518a06fe0213c5beb85} [  1 ms] [default] [myshop] [rows:23 ] [txid:1] SHOW TABLES
+2025-02-20 01:26:20.244 [DEBU] {6098b6b907ac2518a06fe0213c5beb85} [ 10 ms] [default] [myshop] [rows:1  ] [txid:1] UPDATE `position_info` SET `pic_url`='Brr 撑 比较 Through Psst Planula 不',`goods_name`='Oil Instance Indeed Oh 老实 统统 Behind Oof 捺 Tusk',`link`='劈 Except 细 Hyena 摇 擒 依然 Vice 吸',`sort`=3,`goods_id`=7,`updated_at`='2025-02-20 01:26:20' WHERE (`id`=3) AND `deleted_at` IS NULL
+2025-02-20 01:26:20.247 [DEBU] {6098b6b907ac2518a06fe0213c5beb85} [  2 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
+2025-02-20 01:26:52.006 [DEBU] {a470aa1f0fac2518a16fe0219391bf0b} [  2 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`,`deleted_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:26:52.015 [DEBU] {a470aa1f0fac2518a16fe0219391bf0b} [  9 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `position_info` WHERE `deleted_at` IS NULL
+2025-02-20 01:26:52.016 [DEBU] {a470aa1f0fac2518a16fe0219391bf0b} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`link`,`goods_name`,`goods_id`,`sort`,`created_at`,`updated_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:27:07.897 [DEBU] {6834e9d212ac2518a26fe0218e8d7d7b} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`,`deleted_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:27:07.898 [DEBU] {6834e9d212ac2518a26fe0218e8d7d7b} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `position_info` WHERE `deleted_at` IS NULL
+2025-02-20 01:27:07.899 [DEBU] {6834e9d212ac2518a26fe0218e8d7d7b} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`link`,`goods_name`,`goods_id`,`sort`,`created_at`,`updated_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:27:23.232 [DEBU] {94c2266416ac2518a36fe021883bba7e} [ 14 ms] [default] [myshop] [rows:1  ] INSERT INTO `position_info`(`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`) VALUES('Summary','写 Heating Excepting 全 Paintwork','一定 抓 相当 血淋淋 Wherever',7,4,'2025-02-20 01:27:23','2025-02-20 01:27:23') 
+2025-02-20 01:27:26.765 [DEBU] {f84e853717ac2518a46fe021e6620826} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`,`deleted_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:27:26.766 [DEBU] {f84e853717ac2518a46fe021e6620826} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `position_info` WHERE `deleted_at` IS NULL
+2025-02-20 01:27:26.766 [DEBU] {f84e853717ac2518a46fe021e6620826} [  0 ms] [default] [myshop] [rows:2  ] SELECT `id`,`pic_url`,`link`,`goods_name`,`goods_id`,`sort`,`created_at`,`updated_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:27:59.351 [DEBU] {bc19cccd1eac2518a56fe0217d78ee92} [  1 ms] [default] [myshop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 01:27:59.353 [DEBU] {bc19cccd1eac2518a56fe0217d78ee92} [  2 ms] [default] [myshop] [rows:0  ] [txid:2] UPDATE `position_info` SET `deleted_at`='2025-02-20 01:27:59' WHERE (`id`=1) AND `deleted_at` IS NULL
+2025-02-20 01:27:59.354 [DEBU] {bc19cccd1eac2518a56fe0217d78ee92} [  0 ms] [default] [myshop] [rows:0  ] [txid:2] COMMIT
+2025-02-20 01:28:10.235 [DEBU] {7086a25621ac2518a66fe021ee6ad696} [  0 ms] [default] [myshop] [rows:0  ] [txid:3] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 01:28:10.237 [DEBU] {7086a25621ac2518a66fe021ee6ad696} [  1 ms] [default] [myshop] [rows:1  ] [txid:3] UPDATE `position_info` SET `deleted_at`='2025-02-20 01:28:10' WHERE (`id`=4) AND `deleted_at` IS NULL
+2025-02-20 01:28:10.248 [DEBU] {7086a25621ac2518a66fe021ee6ad696} [ 10 ms] [default] [myshop] [rows:0  ] [txid:3] COMMIT
+2025-02-20 01:28:32.010 [DEBU] {248d5d6826ac2518a76fe02177e04998} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`,`deleted_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:28:32.011 [DEBU] {248d5d6826ac2518a76fe02177e04998} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `position_info` WHERE `deleted_at` IS NULL
+2025-02-20 01:28:32.012 [DEBU] {248d5d6826ac2518a76fe02177e04998} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`link`,`goods_name`,`goods_id`,`sort`,`created_at`,`updated_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-20 01:29:51.979 [DEBU] {90deda0639ac251856674b406d0fe35a} [  2 ms] [default] [myshop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 01:29:51.981 [DEBU] {90deda0639ac251856674b406d0fe35a} [  1 ms] [default] [myshop] [rows:9  ] [txid:1] SHOW FULL COLUMNS FROM `position_info`
+2025-02-20 01:29:51.984 [DEBU] {90deda0639ac251856674b406d0fe35a} [  2 ms] [default] [myshop] [rows:1  ] [txid:1] DELETE FROM `position_info` WHERE `id`=4
+2025-02-20 01:29:51.988 [DEBU] {90deda0639ac251856674b406d0fe35a} [  3 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
+2025-02-20 01:30:30.429 [DEBU] {282dacfa41ac251807072b484c402f69} [  1 ms] [default] [myshop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-20 01:30:30.432 [DEBU] {282dacfa41ac251807072b484c402f69} [  2 ms] [default] [myshop] [rows:9  ] [txid:1] SHOW FULL COLUMNS FROM `position_info`
+2025-02-20 01:30:30.434 [DEBU] {282dacfa41ac251807072b484c402f69} [  1 ms] [default] [myshop] [rows:1  ] [txid:1] UPDATE `position_info` SET `deleted_at`='2025-02-20 01:30:30' WHERE (`id`=3) AND `deleted_at` IS NULL
+2025-02-20 01:30:30.437 [DEBU] {282dacfa41ac251807072b484c402f69} [  3 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
