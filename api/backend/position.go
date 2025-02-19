@@ -32,7 +32,9 @@ type PositionUpdateReq struct {
 	GoodsName string `json:"goods_name" v:"required#商品名称不能为空" dc:"商品名称"`
 	GoodsId   uint   `json:"goods_id"  v:"required#商品Id不能为空"   dc:"商品ID"`
 }
-type PositionUpdateRes struct{}
+type PositionUpdateRes struct {
+	Id uint `json:"id"`
+}
 
 type PositionGetListCommonReq struct {
 	g.Meta `path:"/backend/position/list" method:"get" tags:"手工位" summary:"手工位列表"`
