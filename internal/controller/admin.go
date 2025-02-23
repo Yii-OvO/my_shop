@@ -2,6 +2,7 @@ package controller
 
 import (
 	"context"
+	"github.com/gogf/gf/v2/util/gconv"
 	"my_shop/api/backend"
 
 	"my_shop/internal/model"
@@ -57,6 +58,14 @@ func (a *cAdmin) List(ctx context.Context, req *backend.AdminGetListCommonReq) (
 		Page:  getListRes.Page,
 		Size:  getListRes.Size,
 		Total: getListRes.Total}, nil
+}
+
+func (c *cAdmin) Info(ctx context.Context, req *backend.AdminGetInfoReq) (res *backend.AdminGetInfoRes, err error) {
+	return &backend.AdminGetInfoRes{
+		Id:          gconv.Int(service.Auth().GetIdentity(ctx)),
+		IdentityKey: service.Auth().IdentityKey,
+		Payload:     service.Auth().GetPayload(ctx),
+	}, nil
 }
 
 //func (a *cAdmin) List(ctx context.Context, req *backend.AdminGetListCommonReq) (res *backend.AdminGetListCommonRes, err error) {

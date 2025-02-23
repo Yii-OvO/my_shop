@@ -15,6 +15,10 @@ type (
 		ResponseHandler(r *ghttp.Request)
 		// 自定义上下文对象
 		Ctx(r *ghttp.Request)
+		// CORS 跨域
+		CORS(r *ghttp.Request)
+		// Auth 鉴权
+		Auth(r *ghttp.Request)
 	}
 )
 

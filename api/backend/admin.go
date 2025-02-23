@@ -44,3 +44,13 @@ type AdminGetListCommonRes struct {
 	Size  int         `json:"size" description:"分页数量"`
 	Total int         `json:"total" description:"数据总数"`
 }
+
+type AdminGetInfoReq struct {
+	g.Meta `path:"/backend/admin/info" method:"get" tags:"管理员" summary:"查看管理员信息"`
+}
+
+type AdminGetInfoRes struct {
+	Id          int    `json:"id"`
+	IdentityKey string `json:"identity_key"` //身份验证的key值
+	Payload     string `json:"payload"`      //载荷 PayloadFunc: 登录期间的设置私有载荷的函数
+}
