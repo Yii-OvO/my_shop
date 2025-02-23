@@ -1,0 +1,12 @@
+2025-02-23 15:04:10.741 [DEBU] {a0e3ca8866c42618103f1f522450b660} [ 54 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-23 15:04:10.750 [DEBU] {a0e3ca8866c42618103f1f522450b660} [  7 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-23 15:04:10.761 [DEBU] {a0e3ca8866c42618103f1f522450b660} [ 10 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-23 15:04:17.632 [DEBU] {7899bb2668c42618113f1f52c264541a} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-23 15:04:21.469 [DEBU] {f811790b69c42618123f1f52ee198e27} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-23 15:08:57.471 [DEBU] {64c13e4ea9c426182089555bc73ee6ea} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-23 15:08:57.474 [DEBU] {64c13e4ea9c426182089555bc73ee6ea} [  1 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-23 15:08:57.484 [DEBU] {64c13e4ea9c426182089555bc73ee6ea} [  9 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='刀玉兰' LIMIT 1
+2025-02-23 15:09:08.358 [DEBU] {a08c60d7abc426182189555bfd51a885} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-23 15:09:52.073 [DEBU] {9cb0f904b6c426182689555bbfa0f389} [  2 ms] [default] [myshop] [rows:5  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,10
+2025-02-23 15:09:52.083 [DEBU] {9cb0f904b6c426182689555bbfa0f389} [  9 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2025-02-23 15:09:52.085 [DEBU] {9cb0f904b6c426182689555bbfa0f389} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`name`,`role_ids`,`is_admin`,`created_at`,`updated_at` FROM `admin_info` LIMIT 0,10
