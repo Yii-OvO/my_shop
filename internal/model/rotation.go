@@ -60,9 +60,6 @@ type RotationSearchOutput struct {
 }
 
 type RotationGetListOutputItem struct {
-	//Rotation *RotationListItem `json:"rotation"`
-	//Category *RotationListCategoryItem `json:"category"`
-	//User     *RotationListUserItem     `json:"user"`
 	Id        uint        `json:"id"` // 自增ID
 	PicUrl    string      `json:"pic_url"`
 	Link      string      `json:"link"`

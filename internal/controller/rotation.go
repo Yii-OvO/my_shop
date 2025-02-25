@@ -3,6 +3,7 @@ package controller
 import (
 	"context"
 	"my_shop/api/backend"
+	"my_shop/api/frontend"
 
 	"my_shop/internal/model"
 	"my_shop/internal/service"
@@ -75,18 +76,18 @@ func (a *cRotation) List(ctx context.Context, req *backend.RotationGetListCommon
 //}
 
 // 前台的取值方法
-//func (a *cRotation) ListFrontend(ctx context.Context, req *frontend.RotationGetListCommonReq) (res *frontend.RotationGetListCommonRes, err error) {
-//	getListRes, err := service.Rotation().GetList(ctx, model.RotationGetListInput{
-//		Page: req.Page,
-//		Size: req.Size,
-//		Sort: req.Sort,
-//	})
-//	if err != nil {
-//		return nil, err
-//	}
-//
-//	return &frontend.RotationGetListCommonRes{List: getListRes.List,
-//		Page:  getListRes.Page,
-//		Size:  getListRes.Size,
-//		Total: getListRes.Total}, nil
-//}
+func (a *cRotation) ListFrontend(ctx context.Context, req *frontend.RotationGetListCommonReq) (res *frontend.RotationGetListCommonRes, err error) {
+	getListRes, err := service.Rotation().GetList(ctx, model.RotationGetListInput{
+		Page: req.Page,
+		Size: req.Size,
+		Sort: req.Sort,
+	})
+	if err != nil {
+		return nil, err
+	}
+
+	return &frontend.RotationGetListCommonRes{List: getListRes.List,
+		Page:  getListRes.Page,
+		Size:  getListRes.Size,
+		Total: getListRes.Total}, nil
+}
