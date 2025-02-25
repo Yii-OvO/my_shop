@@ -1,0 +1,58 @@
+2025-02-25 15:27:24.848 [DEBU] {ece27242d4622718597c707a2906cb62} [ 59 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-25 15:27:24.857 [DEBU] {ece27242d4622718597c707a2906cb62} [  6 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-25 15:27:24.872 [DEBU] {ece27242d4622718597c707a2906cb62} [ 14 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:27:24.874 [DEBU] {ece27242d4622718597c707a2906cb62} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:27:24.875 [DEBU] {ece27242d4622718597c707a2906cb62} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:27:35.523 [DEBU] {84a80cc1d66227185a7c707a2ae04c10} [ 19 ms] [default] [myshop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://loremflickr.com/400/400?lock=5315147204812103','https://stale-heating.com/',38,'2025-02-25 15:27:35','2025-02-25 15:27:35') 
+2025-02-25 15:28:44.012 [DEBU] {78865fb4e66227185b7c707a02f01af1} [  2 ms] [default] [myshop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-25 15:28:44.022 [DEBU] {78865fb4e66227185b7c707a02f01af1} [ 10 ms] [default] [myshop] [rows:1  ] [txid:1] UPDATE `rotation_info` SET `pic_url`='https://loremflickr.com/400/400?lock=7241470326655948',`link`='https://long-term-deer.biz/',`sort`=77,`updated_at`='2025-02-25 15:28:44' WHERE (`id`=12) AND `deleted_at` IS NULL
+2025-02-25 15:28:44.025 [DEBU] {78865fb4e66227185b7c707a02f01af1} [  3 ms] [default] [myshop] [rows:0  ] [txid:1] COMMIT
+2025-02-25 15:29:14.790 [DEBU] {40a8dfdeed6227185d7c707a24b6cd8d} [  2 ms] [default] [myshop] [rows:5  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:29:14.791 [DEBU] {40a8dfdeed6227185d7c707a24b6cd8d} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:29:14.792 [DEBU] {40a8dfdeed6227185d7c707a24b6cd8d} [  0 ms] [default] [myshop] [rows:5  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:29:24.723 [DEBU] {3c520a2ff06227185e7c707ae157a50f} [  1 ms] [default] [myshop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-25 15:29:24.725 [DEBU] {3c520a2ff06227185e7c707ae157a50f} [  2 ms] [default] [myshop] [rows:1  ] [txid:2] UPDATE `rotation_info` SET `deleted_at`='2025-02-25 15:29:24' WHERE (`id`=12) AND `deleted_at` IS NULL
+2025-02-25 15:29:24.730 [DEBU] {3c520a2ff06227185e7c707ae157a50f} [  5 ms] [default] [myshop] [rows:0  ] [txid:2] COMMIT
+2025-02-25 15:29:47.593 [DEBU] {d4d1ef81f56227185f7c707af7cbf310} [  5 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-25 15:29:47.615 [DEBU] {d4d1ef81f56227185f7c707af7cbf310} [ 21 ms] [default] [myshop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('行义轩','955284ecabd84c87bd0fec4d1a1fd658','19','2025-02-25 15:29:47','2025-02-25 15:29:47','uy1bZeTtTb',45) 
+2025-02-25 15:30:13.436 [DEBU] {2c4c9586fb622718617c707ab60632c4} [  0 ms] [default] [myshop] [rows:6  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,10
+2025-02-25 15:30:13.437 [DEBU] {2c4c9586fb622718617c707ab60632c4} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2025-02-25 15:30:13.438 [DEBU] {2c4c9586fb622718617c707ab60632c4} [  0 ms] [default] [myshop] [rows:6  ] SELECT `id`,`name`,`role_ids`,`is_admin`,`created_at`,`updated_at` FROM `admin_info` LIMIT 0,10
+2025-02-25 15:30:35.078 [DEBU] {b8496b9000632718627c707af84243fe} [  2 ms] [default] [myshop] [rows:0  ] [txid:3] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-25 15:30:35.080 [DEBU] {b8496b9000632718627c707af84243fe} [  1 ms] [default] [myshop] [rows:1  ] [txid:3] UPDATE `admin_info` SET `name`='苦艺涵',`password`='9e3a1e5474f5b66e3ef3958198281c00',`role_ids`='39',`updated_at`='2025-02-25 15:30:35',`user_salt`='4uAv6Tc5Vi',`is_admin`=22 WHERE `id`=19
+2025-02-25 15:30:35.089 [DEBU] {b8496b9000632718627c707af84243fe} [  9 ms] [default] [myshop] [rows:0  ] [txid:3] COMMIT
+2025-02-25 15:30:51.758 [DEBU] {9c23bd7204632718637c707adc43dc8a} [  0 ms] [default] [myshop] [rows:0  ] [txid:4] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-25 15:30:51.762 [DEBU] {9c23bd7204632718637c707adc43dc8a} [  3 ms] [default] [myshop] [rows:1  ] [txid:4] DELETE FROM `admin_info` WHERE `id`=19
+2025-02-25 15:30:51.765 [DEBU] {9c23bd7204632718637c707adc43dc8a} [  2 ms] [default] [myshop] [rows:0  ] [txid:4] COMMIT
+2025-02-25 15:31:21.255 [DEBU] {b465ab500b632718647c707a77c1abfe} [  4 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `position_info`
+2025-02-25 15:31:21.274 [DEBU] {b465ab500b632718647c707a77c1abfe} [ 18 ms] [default] [myshop] [rows:1  ] INSERT INTO `position_info`(`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`) VALUES('https://loremflickr.com/400/400?lock=6933990311394892','归雅婷','https://thorny-jacket.biz/',93,78,'2025-02-25 15:31:21','2025-02-25 15:31:21') 
+2025-02-25 15:31:34.749 [DEBU] {ccc132750e632718657c707a26b796e0} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`goods_name`,`link`,`sort`,`goods_id`,`created_at`,`updated_at`,`deleted_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:31:34.750 [DEBU] {ccc132750e632718657c707a26b796e0} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `position_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:31:34.751 [DEBU] {ccc132750e632718657c707a26b796e0} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`pic_url`,`link`,`goods_name`,`goods_id`,`sort`,`created_at`,`updated_at` FROM `position_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:31:44.053 [DEBU] {f05abc9f10632718667c707a794c574b} [  0 ms] [default] [myshop] [rows:0  ] [txid:5] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-25 15:31:44.054 [DEBU] {f05abc9f10632718667c707a794c574b} [  0 ms] [default] [myshop] [rows:1  ] [txid:5] UPDATE `position_info` SET `pic_url`='https://loremflickr.com/400/400?lock=1681250747957789',`goods_name`='察丽芳',`link`='https://passionate-understanding.org/',`sort`=7,`goods_id`=94,`updated_at`='2025-02-25 15:31:44' WHERE (`id`=5) AND `deleted_at` IS NULL
+2025-02-25 15:31:44.057 [DEBU] {f05abc9f10632718667c707a794c574b} [  2 ms] [default] [myshop] [rows:0  ] [txid:5] COMMIT
+2025-02-25 15:32:01.120 [DEBU] {f4bffb9814632718677c707adac7a333} [  1 ms] [default] [myshop] [rows:0  ] [txid:6] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-02-25 15:32:01.122 [DEBU] {f4bffb9814632718677c707adac7a333} [  1 ms] [default] [myshop] [rows:1  ] [txid:6] UPDATE `position_info` SET `deleted_at`='2025-02-25 15:32:01' WHERE (`id`=5) AND `deleted_at` IS NULL
+2025-02-25 15:32:01.133 [DEBU] {f4bffb9814632718677c707adac7a333} [ 11 ms] [default] [myshop] [rows:0  ] [txid:6] COMMIT
+2025-02-25 15:32:41.422 [DEBU] {4810a6fa1d632718697c707af7212c64} [ 10 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-25 15:52:42.583 [DEBU] {348bd0a53564271864ab015f7941449d} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-25 15:52:42.586 [DEBU] {348bd0a53564271864ab015f7941449d} [  1 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-25 15:52:42.587 [DEBU] {348bd0a53564271864ab015f7941449d} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:52:42.588 [DEBU] {348bd0a53564271864ab015f7941449d} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:52:42.589 [DEBU] {348bd0a53564271864ab015f7941449d} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:53:33.195 [DEBU] {cc9a866e416427180e749569ee323093} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-25 15:53:33.198 [DEBU] {cc9a866e416427180e749569ee323093} [  2 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-25 15:53:33.199 [DEBU] {cc9a866e416427180e749569ee323093} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:53:33.200 [DEBU] {cc9a866e416427180e749569ee323093} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:53:33.201 [DEBU] {cc9a866e416427180e749569ee323093} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:54:01.005 [DEBU] {3c9b13e847642718337d402bae597ea3} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-25 15:54:01.008 [DEBU] {3c9b13e847642718337d402bae597ea3} [  1 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-25 15:54:01.010 [DEBU] {3c9b13e847642718337d402bae597ea3} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:54:01.011 [DEBU] {3c9b13e847642718337d402bae597ea3} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:54:01.012 [DEBU] {3c9b13e847642718337d402bae597ea3} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:56:59.972 [DEBU] {b05a4c9371642718dba8c744af5d29ad} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-25 15:56:59.984 [DEBU] {b05a4c9371642718dba8c744af5d29ad} [ 10 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2025-02-25 15:56:59.985 [DEBU] {b05a4c9371642718dba8c744af5d29ad} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-02-25 15:56:59.986 [DEBU] {b05a4c9371642718dba8c744af5d29ad} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2025-02-25 15:56:59.987 [DEBU] {b05a4c9371642718dba8c744af5d29ad} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at` FROM `rotation_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
