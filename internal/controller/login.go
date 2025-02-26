@@ -25,12 +25,14 @@ type cLogin struct{}
 //	return
 //}
 
-func (c *cLogin) Login(ctx context.Context, req *backend.LoginDoReq) (res *backend.LoginDoRes, err error) {
-	res = &backend.LoginDoRes{}
-	res.Token, res.Expire = service.Auth().LoginHandler(ctx)
-	return
-}
+//for jwt
+//func (c *cLogin) Login(ctx context.Context, req *backend.LoginDoReq) (res *backend.LoginDoRes, err error) {
+//	res = &backend.LoginDoRes{}
+//	res.Token, res.Expire = service.Auth().LoginHandler(ctx)
+//	return
+//}
 
+// RefreshToken for jwt, 在gtoken中不需要客户端主动刷新token，而是在服务端自动刷新
 func (c *cLogin) RefreshToken(ctx context.Context, req *backend.RefreshTokenReq) (res *backend.RefreshTokenRes, err error) {
 	res = &backend.RefreshTokenRes{}
 	res.Token, res.Expire = service.Auth().RefreshHandler(ctx)
