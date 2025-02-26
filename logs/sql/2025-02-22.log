@@ -1,7 +1,0 @@
-2025-02-22 22:39:49.755 [DEBU] {148bb056af8e2618c946206a82f05928} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
-2025-02-22 22:39:49.758 [DEBU] {148bb056af8e2618c946206a82f05928} [  2 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
-2025-02-22 22:39:49.761 [DEBU] {148bb056af8e2618c946206a82f05928} [  2 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
-2025-02-22 22:40:40.549 [DEBU] {384b7e2abb8e2618ca46206a6946ed8c} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
-2025-02-22 22:41:34.004 [DEBU] {bcf8ab9bc78e2618cb46206ae3061b4f} [ 16 ms] [default] [myshop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('yee','8312dbbff289f227c9ac5898a3cd141e','1','2025-02-22 22:41:33','2025-02-22 22:41:33','r4KbESy56Z',1) 
-2025-02-22 22:41:46.452 [DEBU] {6cbea182ca8e2618cc46206a4fac6876} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='yee' LIMIT 1
-2025-02-22 22:41:51.813 [DEBU] {541121c2cb8e2618cd46206a8eb81c01} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='yee' LIMIT 1

@@ -1,0 +1,30 @@
+2025-02-26 10:53:05.062 [DEBU] {68fe497f70a227186370861eba087759} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-26 10:53:05.077 [DEBU] {68fe497f70a227186370861eba087759} [  4 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-26 10:53:05.085 [DEBU] {68fe497f70a227186370861eba087759} [  8 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='摩俊杰' LIMIT 1
+2025-02-26 10:53:18.784 [DEBU] {1030e6b073a227186470861e01b8ab31} [  9 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:12:28.559 [DEBU] {1c2c31657fa32718a068214f133acf36} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-26 11:12:28.562 [DEBU] {603e85657fa32718a168214f0647b6c4} [  1 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-26 11:12:28.564 [DEBU] {840ea5657fa32718a268214f64eb589e} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:12:32.078 [DEBU] {c85b193780a32718a468214fcb3aa627} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:12:35.635 [DEBU] {14ab1c0b81a32718a668214f98a57618} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:32:09.840 [DEBU] {24640a6f92a42718fa1bc962d8245255} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-26 11:32:09.844 [DEBU] {08475c6f92a42718fb1bc96262a1683d} [  2 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-26 11:32:09.846 [DEBU] {84308d6f92a42718fc1bc9624efdf119} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:32:13.974 [DEBU] {d459956593a42718fe1bc962821da6d7} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:32:13.975 [DEBU] {ccb0af6593a42718ff1bc96229fdc842} [  0 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `id`='Admin:3' LIMIT 1
+2025-02-26 11:36:00.213 [DEBU] {20003f12c8a42718324b2d729ac7313a} [  5 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-26 11:36:00.217 [DEBU] {8cb59f12c8a42718334b2d72679eab38} [  3 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-26 11:36:00.220 [DEBU] {286ee112c8a42718344b2d7271270072} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:36:00.221 [DEBU] {58eb0113c8a42718354b2d722e52dfed} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `id`='3' LIMIT 1
+2025-02-26 11:36:00.229 [DEBU] {38cd1213c8a42718364b2d72dec85f19} [  7 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-02-26 11:36:00.235 [DEBU] {28678d13c8a42718374b2d72df51e255} [  5 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
+2025-02-26 11:36:00.239 [DEBU] {68f2df13c8a42718384b2d7250c8a025} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2025-02-26 11:36:00.242 [DEBU] {28d92914c8a42718394b2d724f76048e} [  2 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
+2025-02-26 11:36:14.968 [DEBU] {a0f8d081cba42718e31951152c0c46ab} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-02-26 11:36:14.972 [DEBU] {883e2a82cba42718e4195115f46634a6} [  1 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-02-26 11:36:14.974 [DEBU] {38e84d82cba42718e5195115d882076a} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='wangzhongyang' LIMIT 1
+2025-02-26 11:36:14.976 [DEBU] {3cef7482cba42718e619511501c44d65} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `id`='3' LIMIT 1
+2025-02-26 11:36:14.977 [DEBU] {f8798882cba42718e7195115a254a9d2} [  0 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-02-26 11:36:14.979 [DEBU] {08429c82cba42718e819511569a06b5b} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
+2025-02-26 11:36:14.981 [DEBU] {b4b3b582cba42718e91951158ca9c6f4} [  1 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2025-02-26 11:36:14.982 [DEBU] {d8dad382cba42718ea19511532d8e539} [  0 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
