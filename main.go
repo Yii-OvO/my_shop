@@ -5,9 +5,9 @@ import (
 	"github.com/gogf/gf/v2/os/gctx"
 	_ "my_shop/internal/packed"
 
-	_ "my_shop/internal/logic"
-
+	_ "github.com/gogf/gf/contrib/nosql/redis/v2"
 	"my_shop/internal/cmd"
+	_ "my_shop/internal/logic"
 )
 
 func main() {

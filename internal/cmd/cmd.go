@@ -30,6 +30,7 @@ var (
 			// 启动gtoken
 			gfToken := &gtoken.GfToken{
 				ServerName:       "myshop",
+				CacheMode:        2, //redis
 				LoginPath:        "/backend/login",
 				LoginBeforeFunc:  loginFunc,
 				LoginAfterFunc:   loginAfterFunc,

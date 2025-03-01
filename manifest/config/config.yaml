@@ -14,3 +14,12 @@ database:
   default: # todo  修改成自己的密码
     link: "mysql:root:myroot@tcp(127.0.0.1:3306)/myshop"
     debug: true
+
+# Redis 配置示例
+redis:
+  # 单实例配置示例1
+  default:
+    address: 127.0.0.1:6379
+    db:      1
+#    pass:    123456
+    idleTimeout: 600
