@@ -85,3 +85,5 @@
 2025-03-01 16:42:53.922 [DEBU] {4cebfd0c45a12818dacf4879d93acc36} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
 2025-03-01 16:43:17.978 [DEBU] {8cdacfa64aa12818ddcf4879b1213700} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
 2025-03-01 16:43:17.979 [DEBU] {8cdacfa64aa12818ddcf4879b1213700} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 21:24:23.999 [DEBU] {489b3c93a1b02818f5a1fb2531e51bdd} [ 13 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `role_info`
+2025-03-01 21:24:24.019 [DEBU] {489b3c93a1b02818f5a1fb2531e51bdd} [ 17 ms] [default] [myshop] [rows:1  ] INSERT INTO `role_info`(`name`,`desc`,`created_at`,`updated_at`) VALUES('京茗泽','qui proident cupidatat dolor','2025-03-01 21:24:24','2025-03-01 21:24:24') 
