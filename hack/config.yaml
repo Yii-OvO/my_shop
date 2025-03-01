@@ -15,6 +15,6 @@ gfcli:
   # dao生成
   gen:
     dao: #todo 换成你自己的密码
-      - link: "mysql:root:myroot@tcp(127.0.0.1:3306)/myshop"
+      - link: "mysql:root:myroot@tcp(127.0.0.1:3306)/myshop?loc=Local"
         descriptionTag: true
         noModelComment: true

@@ -43,3 +43,45 @@
 2025-03-01 15:08:00.956 [DEBU] {d084bf8d179c2818a1a0a9533750c6b1} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
 2025-03-01 15:08:00.957 [DEBU] {b85cd78d179c2818a2a0a953a4b3b26e} [  1 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
 2025-03-01 15:08:00.958 [DEBU] {545ae88d179c2818a3a0a953dd573e14} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
+2025-03-01 16:15:48.452 [DEBU] {90c90e97ca9f281872072a6d17566300} [  7 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2025-03-01 16:15:48.466 [DEBU] {90c90e97ca9f281872072a6d17566300} [ 12 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:17:25.009 [DEBU] {dc696d12e19f281812258f782f057df3} [  3 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2025-03-01 16:17:25.011 [DEBU] {dc696d12e19f281812258f782f057df3} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:20:37.754 [DEBU] {60101cf30da0281815258f785ff00671} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:21:53.502 [DEBU] {b4b8f7951fa02818835e823ec8fa0633} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-01 16:21:53.505 [DEBU] {d47a38961fa02818845e823e5d19d488} [  2 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-03-01 16:21:53.507 [DEBU] {10df60961fa02818855e823e7aca0a97} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`name`='wangzhongyang') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:21:53.513 [DEBU] {b0eec4961fa02818865e823e66d814e0} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`id`='3') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:21:53.514 [DEBU] {14c1d4961fa02818875e823ef295aa4f} [  1 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-03-01 16:21:53.516 [DEBU] {9ca2ed961fa02818885e823ecff30d8f} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
+2025-03-01 16:21:53.517 [DEBU] {64cf07971fa02818895e823e8dc71adf} [  1 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2025-03-01 16:21:53.519 [DEBU] {18cb20971fa028188a5e823e836dc1ff} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
+2025-03-01 16:23:50.067 [DEBU] {b435b9b93aa0281889ad604cb4b5ee0e} [  3 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2025-03-01 16:23:50.070 [DEBU] {b435b9b93aa0281889ad604cb4b5ee0e} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:23:53.816 [DEBU] {709b57993ba028188bad604cd0679369} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-01 16:23:53.818 [DEBU] {60847e993ba028188cad604c911a4ce7} [  1 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-03-01 16:23:53.820 [DEBU] {10f59e993ba028188dad604c17df54fa} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`name`='wangzhongyang') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:23:53.825 [DEBU] {5ca3ef993ba028188ead604cb0d35b58} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`id`='3') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:23:53.826 [DEBU] {4cb2ff993ba028188fad604ce48ddb7d} [  1 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-03-01 16:23:53.828 [DEBU] {54fc119a3ba0281890ad604ce8e82512} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
+2025-03-01 16:23:53.829 [DEBU] {cc332b9a3ba0281891ad604c5e93239b} [  1 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2025-03-01 16:23:53.831 [DEBU] {fcd5499a3ba0281892ad604cf0ba565a} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
+2025-03-01 16:24:01.130 [DEBU] {cc9b634d3da0281894ad604c4330e5e0} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`name`='yee') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:24:01.133 [DEBU] {58d3814d3da0281895ad604c401c1d14} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`id`='18') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:24:01.134 [DEBU] {d0c3914d3da0281896ad604ce4dc8f5e} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
+2025-03-01 16:24:01.135 [DEBU] {6c7ca14d3da0281897ad604cad247336} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
+2025-03-01 16:29:21.686 [DEBU] {9c48c7ef87a0281833e4f7190f958729} [  3 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2025-03-01 16:29:21.689 [DEBU] {9c48c7ef87a0281833e4f7190f958729} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:30:37.040 [DEBU] {442f377b99a02818795a2122a0db4b24} [  3 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2025-03-01 16:30:37.043 [DEBU] {442f377b99a02818795a2122a0db4b24} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:32:32.361 [DEBU] {bc6ffd54b4a028187a5a2122f52efae8} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
+2025-03-01 16:42:53.906 [DEBU] {c0f7e20b45a12818d3cf4879f130af7e} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-01 16:42:53.909 [DEBU] {e8ab330c45a12818d4cf4879b53585b9} [  1 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `admin_info`
+2025-03-01 16:42:53.910 [DEBU] {9809530c45a12818d5cf4879804b1d1f} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`name`='yee') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:42:53.917 [DEBU] {64b3aa0c45a12818d6cf4879bf022ac2} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`,`deleted_at` FROM `admin_info` WHERE (`id`='18') AND `deleted_at` IS NULL LIMIT 1
+2025-03-01 16:42:53.918 [DEBU] {20d5c20c45a12818d7cf4879f31e9533} [  1 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-03-01 16:42:53.919 [DEBU] {1069da0c45a12818d8cf48798ad11d05} [  0 ms] [default] [myshop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id` IN ('2')
+2025-03-01 16:42:53.920 [DEBU] {802be40c45a12818d9cf4879bd3c8411} [  1 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2025-03-01 16:42:53.922 [DEBU] {4cebfd0c45a12818dacf4879d93acc36} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (0=1) AND `deleted_at` IS NULL
+2025-03-01 16:43:17.978 [DEBU] {8cdacfa64aa12818ddcf4879b1213700} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2025-03-01 16:43:17.979 [DEBU] {8cdacfa64aa12818ddcf4879b1213700} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2025-03-01 00:00:00' AND '2025-03-01 23:59:59') AND (id)
