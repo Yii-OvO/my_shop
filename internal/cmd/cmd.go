@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/goflyfox/gtoken/gtoken"
 	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/gogf/gf/v2/util/gconv"
 	"my_shop/api/backend"
 	"my_shop/internal/consts"
 	"my_shop/internal/controller"
@@ -30,11 +31,13 @@ var (
 			gfToken := &gtoken.GfToken{
 				ServerName:       "myshop",
 				LoginPath:        "/backend/login",
-				LoginBeforeFunc:  LoginFunc,
-				LoginAfterFunc:   LoginAfterFunc,
+				LoginBeforeFunc:  loginFunc,
+				LoginAfterFunc:   loginAfterFunc,
 				LogoutPath:       "/backend/user/logout",
+				AuthPaths:        g.SliceStr{"/backend/admin/info"},
 				AuthExcludePaths: g.SliceStr{"/user/info", "/system/user/info"}, // 不拦截路径 /user/info,/system/user/info,/system/user,
 				MultiLogin:       true,
+				AuthAfterFunc:    authAfterFunc,
 			}
 			// 认证接口
 			s.Group("/", func(group *ghttp.RouterGroup) {
@@ -75,7 +78,7 @@ var (
 )
 
 // todo 迁移到合适的位置
-func LoginFunc(r *ghttp.Request) (string, interface{}) {
+func loginFunc(r *ghttp.Request) (string, interface{}) {
 	name := r.Get("name").String()
 	password := r.Get("password").String()
 	ctx := context.TODO()
@@ -102,8 +105,8 @@ func LoginFunc(r *ghttp.Request) (string, interface{}) {
 }
 
 // todo 迁移到合适的位置
-// LoginAfterFunc 自定义的登录之后的函数
-func LoginAfterFunc(r *ghttp.Request, respData gtoken.Resp) {
+// loginAfterFunc 自定义的登录之后的函数
+func loginAfterFunc(r *ghttp.Request, respData gtoken.Resp) {
 	g.Dump("respData:", respData)
 	if !respData.Success() {
 		respData.Code = 0
@@ -149,4 +152,24 @@ func LoginAfterFunc(r *ghttp.Request, respData gtoken.Resp) {
 		response.JsonExit(r, 0, "", data)
 	}
 	return
+}
+
+func authAfterFunc(r *ghttp.Request, respData gtoken.Resp) {
+	g.Dump("respData:", respData)
+	var adminInfo entity.AdminInfo
+	err := gconv.Struct(respData.GetString("data"), &adminInfo)
+	if err != nil {
+		response.Auth(r)
+		return
+	}
+	//账号被冻结拉黑
+	if adminInfo.DeletedAt != nil {
+		response.AuthBlack(r)
+		return
+	}
+	r.SetCtxVar(consts.CtxAdminId, adminInfo.Id)
+	r.SetCtxVar(consts.CtxAdminName, adminInfo.Name)
+	r.SetCtxVar(consts.CtxAdminRoleIds, adminInfo.RoleIds)
+	r.SetCtxVar(consts.CtxAdminIsAdmin, adminInfo.IsAdmin)
+	r.Middleware.Next()
 }

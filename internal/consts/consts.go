@@ -6,4 +6,8 @@ const (
 	ContextKey               = "ContextKey"         // 上下文变量存储键名，前后端系统共享
 	FileMaxUploadCountMinute = 10                   // 同一用户1分钟之内最大上传数量
 	GtokenAdminPrefix        = "Admin:"             // gtoken登录 管理后台前缀区分
+	CtxAdminId               = "CtxAdminId"
+	CtxAdminName             = "CtxAdminName"
+	CtxAdminRoleIds          = "CtxAdminRoleIds"
+	CtxAdminIsAdmin          = "CtxAdminIsAdmin"
 )
