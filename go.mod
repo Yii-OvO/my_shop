@@ -8,6 +8,7 @@ require (
 	github.com/gogf/gf/contrib/drivers/mysql/v2 v2.8.3
 	github.com/gogf/gf/contrib/nosql/redis/v2 v2.8.3
 	github.com/gogf/gf/v2 v2.8.3
+//github.com/gogf/gf/v2 v2.8.3
 )
 
 require (
