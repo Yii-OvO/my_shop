@@ -119,7 +119,7 @@ func (s *sAdmin) GetAdminByNamePassword(ctx context.Context, in model.UserLoginI
 	//}
 	//验证账号密码是否正确
 	adminInfo := entity.AdminInfo{}
-	err := dao.AdminInfo.Ctx(ctx).Where("name", in.Name).Scan(&adminInfo)
+	err := dao.AdminInfo.Ctx(ctx).Where(dao.AdminInfo.Columns().Name, in.Name).Scan(&adminInfo)
 	if err != nil {
 		return nil
 	}
