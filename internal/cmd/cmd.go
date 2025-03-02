@@ -28,7 +28,7 @@ var (
 		Func: func(ctx context.Context, parser *gcmd.Parser) (err error) {
 			s := g.Server()
 			// 启动gtoken
-			gfToken := &gtoken.GfToken{
+			gfAdminToken := &gtoken.GfToken{
 				ServerName:       "myshop",
 				CacheMode:        2, //redis
 				LoginPath:        "/backend/login",
@@ -36,9 +36,14 @@ var (
 				LoginAfterFunc:   loginAfterFunc,
 				LogoutPath:       "/backend/user/logout",
 				AuthPaths:        g.SliceStr{"/backend/admin/info"},
-				AuthExcludePaths: g.SliceStr{"/user/info", "/system/user/info"}, // 不拦截路径 /user/info,/system/user/info,/system/user,
-				MultiLogin:       true,
+				AuthExcludePaths: g.SliceStr{"/admin/user/info", "/admin/system/user/info"}, // 不拦截路径 /user/info,/system/user/info,/system/user,
 				AuthAfterFunc:    authAfterFunc,
+				MultiLogin:       true,
+			}
+			// todo 抽取方法
+			err = gfAdminToken.Start()
+			if err != nil {
+				return err
 			}
 			// 认证接口
 			s.Group("/", func(group *ghttp.RouterGroup) {
@@ -50,7 +55,7 @@ var (
 					service.Middleware().ResponseHandler,
 				)
 				// gtoken中间件绑定
-				//err := gfToken.Middleware(ctx, group)
+				//err := gfAdminToken.Middleware(ctx, group)
 				//if err != nil {
 				//	panic(err)
 				//}
@@ -70,7 +75,7 @@ var (
 				group.Group("/", func(group *ghttp.RouterGroup) {
 					//group.Middleware(service.Middleware().Auth) //for jwt
 					// gtoken中间件绑定
-					err := gfToken.Middleware(ctx, group)
+					err := gfAdminToken.Middleware(ctx, group)
 					if err != nil {
 						panic(err)
 					}
@@ -109,7 +114,7 @@ func loginFunc(r *ghttp.Request) (string, interface{}) {
 	}
 
 	// 唯一标识，扩展参数user data
-	return consts.GtokenAdminPrefix + strconv.Itoa(adminInfo.Id), adminInfo
+	return consts.GTokenAdminPrefix + strconv.Itoa(adminInfo.Id), adminInfo
 }
 
 // todo 迁移到合适的位置
@@ -124,7 +129,7 @@ func loginAfterFunc(r *ghttp.Request, respData gtoken.Resp) {
 		respData.Code = 1
 		//获得登录用户id
 		userKey := respData.GetString("userKey")
-		adminId := gstr.StrEx(userKey, consts.GtokenAdminPrefix)
+		adminId := gstr.StrEx(userKey, consts.GTokenAdminPrefix)
 		g.Dump("admin:", adminId)
 		//根据id获得登录用户其他信息
 		adminInfo := entity.AdminInfo{}

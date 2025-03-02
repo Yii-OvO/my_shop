@@ -1,0 +1,31 @@
+2025-03-02 16:50:41.558 [DEBU] {c42c667746f028182f74e37e85c995d4} [137 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `role_info`
+2025-03-02 16:50:41.573 [DEBU] {c42c667746f028182f74e37e85c995d4} [ 13 ms] [default] [myshop] [rows:1  ] INSERT INTO `role_info`(`name`,`desc`,`created_at`,`updated_at`) VALUES('fasd','qui proident cupidatat dolor','2025-03-02 16:50:41','2025-03-02 16:50:41') 
+2025-03-02 16:51:28.217 [DEBU] {941ff05b51f028183074e37ecb7a208d} [ 12 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-02 16:51:28.223 [DEBU] {941ff05b51f028183074e37ecb7a208d} [  5 ms] [default] [myshop] [rows:1  ] UPDATE `role_info` SET `name`='饶义轩',`desc`='consequat qui',`updated_at`='2025-03-02 16:51:28' WHERE (`id`=6) AND `deleted_at` IS NULL
+2025-03-02 16:51:49.204 [DEBU] {40af943f56f028183174e37edbc890d5} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at`,`deleted_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-02 16:51:49.214 [DEBU] {40af943f56f028183174e37edbc890d5} [  9 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `role_info` WHERE `deleted_at` IS NULL
+2025-03-02 16:51:49.215 [DEBU] {40af943f56f028183174e37edbc890d5} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-02 16:52:00.335 [DEBU] {187cd4d558f028183274e37ef69a559b} [ 22 ms] [default] [myshop] [rows:1  ] UPDATE `role_info` SET `deleted_at`='2025-03-02 16:52:00' WHERE (`id`=6) AND `deleted_at` IS NULL
+2025-03-02 16:52:04.376 [DEBU] {7428e3c759f028183374e37e7fe34d7d} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at`,`deleted_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-02 16:52:04.376 [DEBU] {7428e3c759f028183374e37e7fe34d7d} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `role_info` WHERE `deleted_at` IS NULL
+2025-03-02 16:52:04.377 [DEBU] {7428e3c759f028183374e37e7fe34d7d} [  0 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-02 16:53:49.644 [ERRO] {7c9e024972f028183474e37e1966b393} [ 24 ms] [default] [myshop] [rows:0  ] INSERT INTO `role_info`(`name`,`desc`,`created_at`,`updated_at`) VALUES('运营','qui proident cupidatat dolor','2025-03-02 16:53:49','2025-03-02 16:53:49') 
+Error: Error 1062 (23000): Duplicate entry '运营' for key 'role_info.unique_index' 
+Stack:
+1.  my_shop/internal/logic/role.(*sRole).Create
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/logic/role/role.go:25
+2.  my_shop/internal/controller.(*cRole).Create
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/controller/role.go:15
+3.  my_shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/logic/middleware/middleware.go:29
+4.  my_shop/internal/logic/middleware.(*sMiddleware).Ctx
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/logic/middleware/middleware.go:86
+5.  my_shop/internal/logic/middleware.(*sMiddleware).CORS
+    D:/Go_WorkSpace/src/e_shop/my_shop/internal/logic/middleware/middleware.go:92
+
+2025-03-02 16:58:21.402 [DEBU] {74bb218fb1f028183a027a5b309da381} [ 20 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `role_info`
+2025-03-02 16:58:21.409 [DEBU] {74bb218fb1f028183a027a5b309da381} [  5 ms] [default] [myshop] [rows:1  ] DELETE FROM `role_info` WHERE `id`=6
+2025-03-02 16:59:26.942 [DEBU] {346eb6d2c0f028183b027a5bdeb5a8b8} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-02 16:59:26.944 [DEBU] {346eb6d2c0f028183b027a5bdeb5a8b8} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at`,`deleted_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-02 16:59:26.945 [DEBU] {346eb6d2c0f028183b027a5bdeb5a8b8} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `role_info` WHERE `deleted_at` IS NULL
+2025-03-02 16:59:26.946 [DEBU] {346eb6d2c0f028183b027a5bdeb5a8b8} [  0 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
