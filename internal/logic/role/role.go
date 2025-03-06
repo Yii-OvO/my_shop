@@ -26,7 +26,16 @@ func (s *sRole) Create(ctx context.Context, in model.RoleCreateInput) (out model
 	if err != nil {
 		return out, err
 	}
-	return model.RoleCreateOutput{RoleId: int(lastInsertID)}, err
+	return model.RoleCreateOutput{RoleId: uint(int(lastInsertID))}, err
+}
+
+// AddPermission 角色添加权限
+func (s *sRole) AddPermission(ctx context.Context, in model.RoleAddPermissionInput) (out model.RoleAddPermissionOutput, err error) {
+	id, err := dao.RolePermissionInfo.Ctx(ctx).Data(in).InsertAndGetId()
+	if err != nil {
+		return model.RoleAddPermissionOutput{}, err
+	}
+	return model.RoleAddPermissionOutput{Id: uint(id)}, err
 }
 
 // Delete 删除
@@ -35,6 +44,18 @@ func (s *sRole) Delete(ctx context.Context, id uint) error {
 	_, err := dao.RoleInfo.Ctx(ctx).Where(g.Map{
 		dao.RoleInfo.Columns().Id: id,
 	}).Unscoped().Delete()
+	return err
+}
+
+// DeletePermission 角色删除权限
+func (s *sRole) DeletePermission(ctx context.Context, in model.RoleDeletePermissionInput) error {
+	_, err := dao.RolePermissionInfo.Ctx(ctx).Where(g.Map{
+		dao.RolePermissionInfo.Columns().RoleId:       in.RoleId,
+		dao.RolePermissionInfo.Columns().PermissionId: in.PermissionId,
+	}).Delete()
+	if err != nil {
+		return err
+	}
 	return err
 }
 

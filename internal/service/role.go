@@ -13,8 +13,12 @@ import (
 type (
 	IRole interface {
 		Create(ctx context.Context, in model.RoleCreateInput) (out model.RoleCreateOutput, err error)
+		// AddPermission 角色添加权限
+		AddPermission(ctx context.Context, in model.RoleAddPermissionInput) (out model.RoleAddPermissionOutput, err error)
 		// Delete 删除
 		Delete(ctx context.Context, id uint) error
+		// DeletePermission 角色删除权限
+		DeletePermission(ctx context.Context, in model.RoleDeletePermissionInput) error
 		// Update 修改
 		Update(ctx context.Context, in model.RoleUpdateInput) error
 		// GetList 查询内容列表
