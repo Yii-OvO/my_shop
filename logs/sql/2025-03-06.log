@@ -1,0 +1,8 @@
+2025-03-06 23:10:31.528 [DEBU] {3008b9f8523f2a181cdee47470acacaf} [  2 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-03-06 23:10:31.540 [DEBU] {3008b9f8523f2a181cdee47470acacaf} [  9 ms] [default] [myshop] [rows:1  ] INSERT INTO `role_permission_info`(`role_id`,`permission_id`,`created_at`,`updated_at`) VALUES(5,75,'2025-03-06 23:10:31','2025-03-06 23:10:31') 
+2025-03-06 23:10:47.571 [DEBU] {90808fb4563f2a181ddee4748a7de90c} [  9 ms] [default] [myshop] [rows:0  ] DELETE FROM `role_permission_info` WHERE `role_id`=82 AND `permission_id`=49
+2025-03-06 23:10:59.004 [DEBU] {5431e25d593f2a181edee4749292302b} [ 12 ms] [default] [myshop] [rows:1  ] DELETE FROM `role_permission_info` WHERE `role_id`=5 AND `permission_id`=75
+2025-03-06 23:15:00.662 [DEBU] {a0b846a2913f2a182d72d9089dc3b7d7} [  4 ms] [default] [myshop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2025-03-06 23:15:00.663 [DEBU] {a0b846a2913f2a182d72d9089dc3b7d7} [  0 ms] [default] [myshop] [rows:0  ] DELETE FROM `role_permission_info` WHERE `role_id`=1 AND `permission_id`=1
+2025-03-06 23:15:25.808 [DEBU] {a826aa7c973f2a182e72d908c6d3ddb0} [ 12 ms] [default] [myshop] [rows:1  ] INSERT INTO `role_permission_info`(`role_id`,`permission_id`,`created_at`,`updated_at`) VALUES(6,51,'2025-03-06 23:15:25','2025-03-06 23:15:25') 
+2025-03-06 23:15:59.342 [DEBU] {7c656b4b9f3f2a183272d9082eb40caf} [ 12 ms] [default] [myshop] [rows:1  ] DELETE FROM `role_permission_info` WHERE `role_id`=6 AND `permission_id`=51
