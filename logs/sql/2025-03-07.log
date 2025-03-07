@@ -1,0 +1,9 @@
+2025-03-07 21:00:53.766 [DEBU] {78b923a3d4862a18e9761e1cbe8c9f7c} [  5 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2025-03-07 21:00:53.786 [DEBU] {78b923a3d4862a18e9761e1cbe8c9f7c} [ 18 ms] [default] [myshop] [rows:1  ] INSERT INTO `permission_info`(`name`,`path`,`created_at`,`updated_at`) VALUES('宫佳琪','/sbin','2025-03-07 21:00:53','2025-03-07 21:00:53') 
+2025-03-07 21:01:12.378 [DEBU] {9837c7f8d8862a18ea761e1c376d1f5a} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-07 21:01:12.380 [DEBU] {9837c7f8d8862a18ea761e1c376d1f5a} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-07 21:01:12.389 [DEBU] {9837c7f8d8862a18ea761e1c376d1f5a} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `permission_info` WHERE `deleted_at` IS NULL
+2025-03-07 21:01:12.390 [DEBU] {9837c7f8d8862a18ea761e1c376d1f5a} [  0 ms] [default] [myshop] [rows:5  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at` FROM `permission_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-07 21:01:24.897 [DEBU] {fc2754e2db862a18eb761e1cd5416ae7} [ 12 ms] [default] [myshop] [rows:0  ] UPDATE `permission_info` SET `name`='瓮三锋',`path`='/opt/share',`updated_at`='2025-03-07 21:01:24' WHERE (`id`=52) AND `deleted_at` IS NULL
+2025-03-07 21:01:48.941 [DEBU] {2428607be1862a18ec761e1cd78e6aa8} [ 14 ms] [default] [myshop] [rows:1  ] UPDATE `permission_info` SET `name`='瓮三锋',`path`='/opt/share',`updated_at`='2025-03-07 21:01:48' WHERE (`id`=7) AND `deleted_at` IS NULL
+2025-03-07 21:02:35.670 [DEBU] {eceb235dec862a18ed761e1cf5be4bf7} [  5 ms] [default] [myshop] [rows:1  ] DELETE FROM `permission_info` WHERE `id`=7
