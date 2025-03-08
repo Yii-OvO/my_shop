@@ -84,7 +84,8 @@ var (
 						"/backend/admin/info": controller.Admin.Info,
 					})
 					group.Bind(
-						controller.File,
+						controller.File,   // 从0到1实现文件入库
+						controller.Upload, // 实现可跨项目使用的文件上云工具类
 					)
 				})
 			})

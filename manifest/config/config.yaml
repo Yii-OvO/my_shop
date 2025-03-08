@@ -24,5 +24,11 @@ redis:
 #    pass:    123456
     idleTimeout: 600
 
+qiniu:
+  bucket: "myshopupload"
+  accessKey: "2uL2BVGcK86QxssL-MYFxr7vp6rI8kXyuN59ZlYB"
+  secretKey: "20khBoLJZPybh5W2Z5J8FgOZJssxdvjO68ae8Qyf"
+  url: "http://sst5wa2u2.hn-bkt.clouddn.com/"
+
 upload:
   path: "upload"
