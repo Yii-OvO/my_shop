@@ -1,6 +1,10 @@
 package consts
 
+// 当常量在多个地方需要使用，最好抽取出来
 const (
+	ProjectName              = "Go开源MyShop"
+	ProjectUsage             = "MyShop"
+	ProjectBrief             = "start http server"
 	Version                  = "v0.2.0"             // 当前服务版本(用于模板展示)
 	CaptchaDefaultName       = "CaptchaDefaultName" // 验证码默认存储空间名称
 	ContextKey               = "ContextKey"         // 上下文变量存储键名，前后端系统共享
@@ -10,6 +14,11 @@ const (
 	CtxAdminName             = "CtxAdminName"
 	CtxAdminRoleIds          = "CtxAdminRoleIds"
 	CtxAdminIsAdmin          = "CtxAdminIsAdmin"
+	CacheModeRedis           = 2
+	BackendServerName        = "myshop"
+	MultiLogin               = true
+	GTokenExpireIn           = 10 * 24 * 60 * 60
 	// 统一管理错误提升
 	CodeMissingParameterMsg = "请检查是否缺少参数"
+	ErrLoginFailMsg         = "登录失败，账号或密码错误"
 )
