@@ -6,12 +6,13 @@ import (
 
 // ArticleCreateUpdateBase 创建/修改内容基类
 type ArticleCreateUpdateBase struct {
+	UserId  int
 	Title   string
 	Desc    string
 	PicUrl  string
-	IsAdmin uint
-	Detail  string
+	IsAdmin int
 	Praise  int
+	Detail  string
 }
 
 // ArticleCreateInput 创建内容

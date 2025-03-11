@@ -11,7 +11,7 @@ type ArticleCommonAddUpdate struct {
 	Title   string `json:"title"     description:"文章标题"   v:"required#名称必传"`
 	Desc    string `json:"desc"      description:"文章概要"`
 	PicUrl  string `json:"pic_url"   description:"图片"`
-	IsAdmin uint   `json:"is_admin"  description:"1后台管理员发布 2前台用户发布" d:"1"`
+	IsAdmin uint   `description:"1后台管理员发布 2前台用户发布"  d:"1"`
 	Detail  string `json:"detail"    description:"文章详情"   v:"required#文章详情必填"`
 	Praise  int    `json:"praise"    description:"点赞数量"`
 }

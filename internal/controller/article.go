@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/gogf/gf/v2/util/gconv"
 	"my_shop/api/backend"
+	"my_shop/internal/consts"
 
 	"my_shop/internal/model"
 	"my_shop/internal/service"
@@ -22,6 +23,7 @@ func (a *cArticle) Create(ctx context.Context, req *backend.ArticleReq) (res *ba
 	if err != nil {
 		return nil, err
 	}
+	data.UserId = gconv.Int(ctx.Value(consts.CtxAdminId)) //获取当前登录的管理员id
 	out, err := service.Article().Create(ctx, data)
 	if err != nil {
 		return nil, err
@@ -40,6 +42,7 @@ func (a *cArticle) Update(ctx context.Context, req *backend.ArticleUpdateReq) (r
 	if err != nil {
 		return nil, err
 	}
+	data.UserId = gconv.Int(ctx.Value(consts.CtxAdminId)) //获取当前登录的管理员id
 	err = service.Article().Update(ctx, data)
 	return &backend.ArticleUpdateRes{Id: req.Id}, nil
 }
