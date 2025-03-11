@@ -11,6 +11,7 @@ import (
 	_ "my_shop/internal/logic/coupon"
 	_ "my_shop/internal/logic/data"
 	_ "my_shop/internal/logic/file"
+	_ "my_shop/internal/logic/goods"
 	_ "my_shop/internal/logic/login"
 	_ "my_shop/internal/logic/middleware"
 	_ "my_shop/internal/logic/permission"
