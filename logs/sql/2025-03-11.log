@@ -20,3 +20,14 @@
 2025-03-11 19:00:01.154 [DEBU] {a459de468eba2b18eac76e231b91994d} [  4 ms] [default] [myshop] [rows:23 ] SHOW TABLES
 2025-03-11 19:00:01.166 [DEBU] {a459de468eba2b18eac76e231b91994d} [ 11 ms] [default] [myshop] [rows:8  ] SHOW FULL COLUMNS FROM `coupon_info`
 2025-03-11 19:00:01.168 [DEBU] {a459de468eba2b18eac76e231b91994d} [  1 ms] [default] [myshop] [rows:0  ] UPDATE `coupon_info` SET `name`='堂智杰',`price`=289,`category_id`=5,`updated_at`='2025-03-11 19:00:01' WHERE (`id`=50) AND `deleted_at` IS NULL
+2025-03-11 19:51:36.143 [DEBU] {7848d0e15ebd2b18f1c0822ebeceb306} [ 16 ms] [default] [myshop] [rows:7  ] SHOW FULL COLUMNS FROM `user_coupon_info`
+2025-03-11 19:51:36.159 [DEBU] {7848d0e15ebd2b18f1c0822ebeceb306} [ 14 ms] [default] [myshop] [rows:1  ] INSERT INTO `user_coupon_info`(`user_id`,`coupon_id`,`status`,`created_at`,`updated_at`) VALUES(55,38,21,'2025-03-11 19:51:36','2025-03-11 19:51:36') 
+2025-03-11 19:51:53.827 [DEBU] {f056080163bd2b18f2c0822e624ce389} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-11 19:51:53.828 [DEBU] {f056080163bd2b18f2c0822e624ce389} [  0 ms] [default] [myshop] [rows:3  ] SELECT `id`,`user_id`,`coupon_id`,`status`,`created_at`,`updated_at`,`deleted_at` FROM `user_coupon_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-11 19:51:53.829 [DEBU] {f056080163bd2b18f2c0822e624ce389} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `user_coupon_info` WHERE `deleted_at` IS NULL
+2025-03-11 19:51:53.830 [DEBU] {f056080163bd2b18f2c0822e624ce389} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`user_id`,`coupon_id`,`status`,`created_at`,`updated_at` FROM `user_coupon_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-11 19:52:09.250 [DEBU] {245cee9766bd2b18f3c0822e1a9846ec} [  7 ms] [default] [myshop] [rows:1  ] UPDATE `user_coupon_info` SET `user_id`=97,`coupon_id`=21,`status`=94,`updated_at`='2025-03-11 19:52:09' WHERE (`id`=4) AND `deleted_at` IS NULL
+2025-03-11 19:52:20.847 [DEBU] {24084b4b69bd2b18f4c0822e083f7a3a} [  5 ms] [default] [myshop] [rows:1  ] UPDATE `user_coupon_info` SET `deleted_at`='2025-03-11 19:52:20' WHERE (`id`=4) AND `deleted_at` IS NULL
+2025-03-11 19:52:53.160 [DEBU] {e4e876d170bd2b18f5c0822e76700544} [  2 ms] [default] [myshop] [rows:2  ] SELECT `id`,`user_id`,`coupon_id`,`status`,`created_at`,`updated_at`,`deleted_at` FROM `user_coupon_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2025-03-11 19:52:53.161 [DEBU] {e4e876d170bd2b18f5c0822e76700544} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `user_coupon_info` WHERE `deleted_at` IS NULL
+2025-03-11 19:52:53.162 [DEBU] {e4e876d170bd2b18f5c0822e76700544} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`user_id`,`coupon_id`,`status`,`created_at`,`updated_at` FROM `user_coupon_info` WHERE `deleted_at` IS NULL LIMIT 0,10
