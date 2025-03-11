@@ -63,35 +63,9 @@ func (a *cCategory) List(ctx context.Context, req *backend.CategoryGetListCommon
 		Total: getListRes.Total}, nil
 }
 
-//func (a *cCategory) List(ctx context.Context, req *backend.CategoryGetListCommonReq) (res *backend.CategoryGetListCommonRes, err error) {
-//	getListRes, err := service.Category().GetList(ctx, model.CategoryGetListInput{
-//		Page: req.Page,
-//		Size: req.Size,
-//		Sort: req.Sort,
-//	})
-//	if err != nil {
-//		return nil, err
-//	}
-//
-//	return &backend.CategoryGetListCommonRes{List: getListRes.List,
-//		Page:  getListRes.Page,
-//		Size:  getListRes.Size,
-//		Total: getListRes.Total}, nil
-//}
-
-// 前台的取值方法
-//func (a *cCategory) ListFrontend(ctx context.Context, req *frontend.CategoryGetListCommonReq) (res *frontend.CategoryGetListCommonRes, err error) {
-//	getListRes, err := service.Category().GetList(ctx, model.CategoryGetListInput{
-//		Page: req.Page,
-//		Size: req.Size,
-//		Sort: req.Sort,
-//	})
-//	if err != nil {
-//		return nil, err
-//	}
-//
-//	return &frontend.CategoryGetListCommonRes{List: getListRes.List,
-//		Page:  getListRes.Page,
-//		Size:  getListRes.Size,
-//		Total: getListRes.Total}, nil
-//}
+func (a *cCategory) ListAll(ctx context.Context, req *backend.CategoryGetListAllCommonReq) (res *backend.CategoryGetListAllCommonRes, err error) {
+	getListRes, err := service.Category().GetListAll(ctx, model.CategoryGetListInput{})
+	return &backend.CategoryGetListAllCommonRes{
+		List:  getListRes.List,
+		Total: getListRes.Total}, nil
+}

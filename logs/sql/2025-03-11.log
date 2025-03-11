@@ -1,0 +1,8 @@
+2025-03-11 18:18:19.407 [DEBU] {182be6c947b82b1877603038a39993a8} [ 23 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-11 18:18:19.415 [DEBU] {182be6c947b82b1877603038a39993a8} [  7 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `category_info`
+2025-03-11 18:18:19.431 [DEBU] {182be6c947b82b1877603038a39993a8} [ 15 ms] [default] [myshop] [rows:7  ] SELECT `id`,`parent_id`,`name`,`pic_url`,`level`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `category_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC
+2025-03-11 18:18:19.433 [DEBU] {182be6c947b82b1877603038a39993a8} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `category_info` WHERE `deleted_at` IS NULL
+2025-03-11 18:18:19.435 [DEBU] {182be6c947b82b1877603038a39993a8} [  1 ms] [default] [myshop] [rows:7  ] SELECT `id`,`parent_id`,`pic_url`,`name`,`sort`,`level`,`created_at`,`updated_at` FROM `category_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC
+2025-03-11 18:18:35.622 [DEBU] {54a11c924bb82b187860303863c9c9b9} [  0 ms] [default] [myshop] [rows:7  ] SELECT `id`,`parent_id`,`name`,`pic_url`,`level`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `category_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10
+2025-03-11 18:18:35.623 [DEBU] {54a11c924bb82b187860303863c9c9b9} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `category_info` WHERE `deleted_at` IS NULL
+2025-03-11 18:18:35.625 [DEBU] {54a11c924bb82b187860303863c9c9b9} [  1 ms] [default] [myshop] [rows:7  ] SELECT `id`,`parent_id`,`pic_url`,`name`,`sort`,`level`,`created_at`,`updated_at` FROM `category_info` WHERE `deleted_at` IS NULL ORDER BY `sort` DESC LIMIT 0,10

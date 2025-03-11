@@ -19,6 +19,8 @@ type (
 		Update(ctx context.Context, in model.CategoryUpdateInput) error
 		// GetList 查询商品分类列表
 		GetList(ctx context.Context, in model.CategoryGetListInput) (out *model.CategoryGetListOutput, err error)
+		// GetListAll 查询商品分类全部信息-不翻页
+		GetListAll(ctx context.Context, in model.CategoryGetListInput) (out *model.CategoryGetListOutput, err error)
 	}
 )
 
