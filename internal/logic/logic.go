@@ -21,5 +21,6 @@ import (
 	_ "my_shop/internal/logic/role"
 	_ "my_shop/internal/logic/rotation"
 	_ "my_shop/internal/logic/session"
+	_ "my_shop/internal/logic/user"
 	_ "my_shop/internal/logic/user_coupon"
 )
