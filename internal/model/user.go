@@ -19,3 +19,13 @@ type LoginInput struct {
 	Name     string `json:"name"`
 	Password string `json:"password"`
 }
+
+type UpdatePasswordInput struct {
+	Password     string
+	UserSalt     string
+	SecretAnswer string
+}
+
+type UpdatePasswordOutput struct {
+	Id uint
+}

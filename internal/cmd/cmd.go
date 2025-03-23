@@ -86,7 +86,7 @@ var (
 				// 不需要登录的路由组绑定
 				group.Bind(
 					// todo
-					controller.User.Register,         //用户注册
+					controller.User.Register,         // 用户注册
 					controller.Rotation.ListFrontend, // 前台轮播图
 				)
 				// 需要登录鉴权的路由组
@@ -97,7 +97,8 @@ var (
 					}
 					// todo需要登录鉴权的接口放到这里
 					group.Bind(
-						controller.User.Info, // 当前登录用户的信息
+						controller.User.Info,           // 当前登录用户的信息
+						controller.User.UpdatePassword, // 当前用户修改密码
 					)
 				})
 			})
