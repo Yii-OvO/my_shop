@@ -1,0 +1,5 @@
+2025-03-23 18:18:32.904 [DEBU] {d082fdbe41672f18de60e2538d7ace58} [ 14 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-23 18:18:32.908 [DEBU] {e01ef1bf41672f18df60e253849cdb90} [  2 ms] [default] [myshop] [rows:12 ] SHOW FULL COLUMNS FROM `user_info`
+2025-03-23 18:18:32.910 [DEBU] {a8f510c041672f18e060e253ab133309} [  2 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`name`='yee') AND `deleted_at` IS NULL LIMIT 1
+2025-03-23 18:18:39.340 [DEBU] {eca2623f43672f18e260e2533f92ede3} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`name`='yee') AND `deleted_at` IS NULL LIMIT 1
+2025-03-23 18:18:39.356 [DEBU] {843f554043672f18e360e25315e6ffc1} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`id`='6') AND `deleted_at` IS NULL LIMIT 1
