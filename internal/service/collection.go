@@ -14,6 +14,8 @@ type (
 	ICollection interface {
 		AddCollection(ctx context.Context, in model.AddCollectionInput) (out *model.AddCollectionOutput, err error)
 		DeleteCollection(ctx context.Context, in model.DeleteCollectionInput) (out *model.DeleteCollectionOutput, err error)
+		// GetList 查询收藏列表
+		GetList(ctx context.Context, in model.CollectionListInput) (out *model.CollectionListOutput, err error)
 	}
 )
 

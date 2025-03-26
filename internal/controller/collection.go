@@ -37,3 +37,16 @@ func (a *cCollection) Delete(ctx context.Context, req *frontend.DeleteCollection
 	}
 	return &frontend.DeleteCollectionRes{Id: collection.Id}, nil
 }
+
+func (c *cCollection) List(ctx context.Context, req *frontend.CollectionListReq) (res *frontend.CollectionListRes, err error) {
+	getListRes, err := service.Collection().GetList(ctx, model.CollectionListInput{
+		Page: req.Page,
+		Size: req.Size,
+		Type: req.Type,
+	})
+	return &frontend.CollectionListRes{
+		List:  getListRes.List,
+		Page:  getListRes.Page,
+		Size:  getListRes.Size,
+		Total: getListRes.Total}, nil
+}

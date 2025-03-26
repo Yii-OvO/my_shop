@@ -34,4 +34,7 @@ const (
 	CodeMissingParameterMsg = "请检查是否缺少参数"
 	ErrLoginFailMsg         = "登录失败，账号或密码错误"
 	ErrSecretAnswerMsg      = "密保问题不正确"
+	// 收藏相关
+	CollectionTypeGoods   = 1
+	CollectionTypeArticle = 2
 )

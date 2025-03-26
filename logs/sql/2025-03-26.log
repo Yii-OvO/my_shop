@@ -1,0 +1,152 @@
+2025-03-26 23:00:55.771 [DEBU] {70317f446862301822bd797d813da459} [  7 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:00:55.789 [DEBU] {70317f446862301822bd797d813da459} [ 15 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:01:16.387 [DEBU] {443067116d62301823bd797d6bc7b485} [ 11 ms] [default] [myshop] [rows:1  ] INSERT INTO `collection_info`(`user_id`,`object_id`,`type`,`created_at`,`updated_at`) VALUES(8,73,2,'2025-03-26 23:01:16','2025-03-26 23:01:16') 
+2025-03-26 23:01:24.933 [DEBU] {e8e5760f6f62301824bd797d9000e924} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:01:24.936 [DEBU] {e8e5760f6f62301824bd797d9000e924} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:01:24.937 [DEBU] {e8e5760f6f62301824bd797d9000e924} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:01:24.941 [DEBU] {e8e5760f6f62301824bd797d9000e924} [  3 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:01:24.951 [DEBU] {e8e5760f6f62301824bd797d9000e924} [  9 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(73)) AND `deleted_at` IS NULL
+2025-03-26 23:04:27.590 [DEBU] {505cd3959962301825bd797db4dbbf3b} [ 13 ms] [default] [myshop] [rows:1  ] INSERT INTO `collection_info`(`user_id`,`object_id`,`type`,`created_at`,`updated_at`) VALUES(8,4,1,'2025-03-26 23:04:27','2025-03-26 23:04:27') 
+2025-03-26 23:04:31.615 [DEBU] {200ddf859a62301826bd797de574abf2} [ 12 ms] [default] [myshop] [rows:1  ] INSERT INTO `collection_info`(`user_id`,`object_id`,`type`,`created_at`,`updated_at`) VALUES(8,5,1,'2025-03-26 23:04:31','2025-03-26 23:04:31') 
+2025-03-26 23:04:52.432 [DEBU] {2cb7225f9f62301827bd797d7b0fad3c} [  4 ms] [default] [myshop] [rows:1  ] INSERT INTO `collection_info`(`user_id`,`object_id`,`type`,`created_at`,`updated_at`) VALUES(8,8,2,'2025-03-26 23:04:52','2025-03-26 23:04:52') 
+2025-03-26 23:04:55.346 [DEBU] {5c08e40ca062301828bd797d9108d8d4} [  3 ms] [default] [myshop] [rows:1  ] INSERT INTO `collection_info`(`user_id`,`object_id`,`type`,`created_at`,`updated_at`) VALUES(8,10,2,'2025-03-26 23:04:55','2025-03-26 23:04:55') 
+2025-03-26 23:05:01.828 [DEBU] {182f9c8ea162301829bd797d02f0fa95} [ 13 ms] [default] [myshop] [rows:1  ] INSERT INTO `collection_info`(`user_id`,`object_id`,`type`,`created_at`,`updated_at`) VALUES(8,9,2,'2025-03-26 23:05:01','2025-03-26 23:05:01') 
+2025-03-26 23:05:20.628 [DEBU] {0cc0fcefa56230182abd797d94b7ff94} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:05:20.629 [DEBU] {0cc0fcefa56230182abd797d94b7ff94} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:05:20.630 [DEBU] {0cc0fcefa56230182abd797d94b7ff94} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(73,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:05:44.831 [DEBU] {84be7492ab6230182bbd797d66997f17} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=1
+2025-03-26 23:05:44.833 [DEBU] {84be7492ab6230182bbd797d66997f17} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=1 LIMIT 0,10
+2025-03-26 23:05:44.834 [DEBU] {84be7492ab6230182bbd797d66997f17} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(1,4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:11:51.953 [DEBU] {4034550c01633018abd8e949766724ef} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:11:51.964 [DEBU] {4034550c01633018abd8e949766724ef} [  9 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`type`=1) AND (`user_id`='CtxUserId')
+2025-03-26 23:13:05.747 [DEBU] {c41848c3076330186b857b2159b1b81e} [  5 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:13:05.750 [DEBU] {c41848c3076330186b857b2159b1b81e} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`type`=2) AND (`user_id`='CtxUserId')
+2025-03-26 23:14:52.024 [DEBU] {e4c0a147166330186c857b21c1167109} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`type`=2) AND (`user_id`='CtxUserId')
+2025-03-26 23:15:29.787 [DEBU] {8072f0c631633018bca02324eb31b0b0} [  6 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:15:29.789 [DEBU] {8072f0c631633018bca02324eb31b0b0} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:17:05.804 [DEBU] {8072f0c631633018bca02324eb31b0b0} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:17:05.805 [DEBU] {8072f0c631633018bca02324eb31b0b0} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:17:05.807 [DEBU] {8072f0c631633018bca02324eb31b0b0} [  1 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:17:05.808 [DEBU] {8072f0c631633018bca02324eb31b0b0} [  0 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(73,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:18:39.646 [DEBU] {04a7473e5f633018bda02324e10f6b27} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:18:39.648 [DEBU] {04a7473e5f633018bda02324e10f6b27} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:18:56.819 [DEBU] {409a18f8636330182594397bbc66e53b} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:18:56.822 [DEBU] {409a18f8636330182594397bbc66e53b} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:18:56.824 [DEBU] {409a18f8636330182594397bbc66e53b} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:18:56.825 [DEBU] {409a18f8636330182594397bbc66e53b} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:19:09.373 [DEBU] {fc22f8e4666330182694397b43e705bc} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:19:09.374 [DEBU] {fc22f8e4666330182694397b43e705bc} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:19:42.707 [DEBU] {f0954ea76e6330188486ee3bdd909e0f} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:19:42.710 [DEBU] {f0954ea76e6330188486ee3bdd909e0f} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:19:42.712 [DEBU] {f0954ea76e6330188486ee3bdd909e0f} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:19:42.714 [DEBU] {f0954ea76e6330188486ee3bdd909e0f} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:19:50.153 [DEBU] {9c2da763706330188586ee3b22a6451f} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:20:05.396 [DEBU] {9c2da763706330188586ee3b22a6451f} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:21:00.793 [DEBU] {480489d580633018b0ba050258e6fcc1} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:21:00.796 [DEBU] {480489d580633018b0ba050258e6fcc1} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=1
+2025-03-26 23:21:05.929 [DEBU] {480489d580633018b0ba050258e6fcc1} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:21:05.930 [DEBU] {480489d580633018b0ba050258e6fcc1} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=1 LIMIT 0,10
+2025-03-26 23:21:05.933 [DEBU] {480489d580633018b0ba050258e6fcc1} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:21:05.934 [DEBU] {480489d580633018b0ba050258e6fcc1} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(1,4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:21:25.655 [DEBU] {e41010a086633018b1ba050276afafcf} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=1
+2025-03-26 23:23:07.459 [DEBU] {e41010a086633018b1ba050276afafcf} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=1 LIMIT 0,10
+2025-03-26 23:23:07.461 [DEBU] {e41010a086633018b1ba050276afafcf} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(1,4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:23:18.002 [DEBU] {30d2e3c7a06330181a21e60c7111040e} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:23:18.005 [DEBU] {30d2e3c7a06330181a21e60c7111040e} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:23:22.911 [DEBU] {30d2e3c7a06330181a21e60c7111040e} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:23:22.912 [DEBU] {30d2e3c7a06330181a21e60c7111040e} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:23:22.916 [DEBU] {30d2e3c7a06330181a21e60c7111040e} [  2 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-26 23:23:22.918 [DEBU] {30d2e3c7a06330181a21e60c7111040e} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(73,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:24:47.226 [DEBU] {6cd9838eb56330181c21e60c7d5fa44d} [  3 ms] [default] [myshop] [rows:12 ] SHOW FULL COLUMNS FROM `user_info`
+2025-03-26 23:24:47.228 [DEBU] {f004c08eb56330181d21e60c3f1d71af} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`name`='yee') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:24:47.230 [DEBU] {140aec8eb56330181e21e60c88b1f7f7} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`id`='6') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:25:14.169 [DEBU] {a49084d4bb6330181f21e60ce3a2c150} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:25:16.919 [DEBU] {a49084d4bb6330181f21e60ce3a2c150} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:25:16.921 [DEBU] {a49084d4bb6330181f21e60ce3a2c150} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(73,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:26:30.473 [DEBU] {949ed82fc86330182021e60c5042d9ca} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info`
+2025-03-26 23:26:52.838 [DEBU] {949ed82fc86330182021e60c5042d9ca} [  1 ms] [default] [myshop] [rows:8  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` LIMIT 0,10
+2025-03-26 23:26:52.840 [DEBU] {949ed82fc86330182021e60c5042d9ca} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:26:52.841 [DEBU] {949ed82fc86330182021e60c5042d9ca} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(1,4,73,5,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:26:52.843 [DEBU] {949ed82fc86330182021e60c5042d9ca} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(1,4,73,5,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:28:07.992 [DEBU] {5cc9984ce463301882db8036b151211f} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:28:07.995 [DEBU] {5cc9984ce463301882db8036b151211f} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`type`=2) AND (`user_id`='CtxUserId')
+2025-03-26 23:28:35.780 [DEBU] {20876ac5ea63301884db8036b3592d1c} [  3 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:28:35.782 [DEBU] {a4fe91c5ea63301885db803632d2df3d} [  2 ms] [default] [myshop] [rows:12 ] SHOW FULL COLUMNS FROM `user_info`
+2025-03-26 23:28:35.783 [DEBU] {8898b9c5ea63301886db8036c4470f91} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`name`='yee1') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:28:35.785 [DEBU] {2845d6c5ea63301887db80365f287f1a} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`id`='8') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:28:49.357 [DEBU] {fc0e94eeed63301888db8036949b7532} [  3 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`type`=2) AND (`user_id`='CtxUserId')
+2025-03-26 23:30:05.057 [DEBU] {f86b258eff633018efdd031681c5df48} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:30:05.060 [DEBU] {f86b258eff633018efdd031681c5df48} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`='CtxUserId') AND (`type`=2)
+2025-03-26 23:31:31.112 [DEBU] {04cd869713643018d19f8c1faae2545d} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:31:31.116 [DEBU] {04cd869713643018d19f8c1faae2545d} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`='CtxUserId') AND (`type`=2)
+2025-03-26 23:32:46.473 [DEBU] {6839b1ec18643018d29f8c1fc9f9acf2} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`='CtxUserId') AND (`type`=2)
+2025-03-26 23:33:11.787 [DEBU] {f8ab26082b643018d5297f72d65a84aa} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:33:11.790 [DEBU] {f8ab26082b643018d5297f72d65a84aa} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=2
+2025-03-26 23:33:11.793 [DEBU] {f8ab26082b643018d5297f72d65a84aa} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:33:11.794 [DEBU] {f8ab26082b643018d5297f72d65a84aa} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=2 LIMIT 0,10
+2025-03-26 23:33:11.796 [DEBU] {f8ab26082b643018d5297f72d65a84aa} [  1 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-26 23:33:11.798 [DEBU] {f8ab26082b643018d5297f72d65a84aa} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(73,8,10,9)) AND `deleted_at` IS NULL
+2025-03-26 23:33:26.855 [DEBU] {8060dc8a2e643018d6297f7265df726b} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=1
+2025-03-26 23:33:26.857 [DEBU] {8060dc8a2e643018d6297f7265df726b} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=1 LIMIT 0,10
+2025-03-26 23:33:26.859 [DEBU] {8060dc8a2e643018d6297f7265df726b} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:33:26.861 [DEBU] {8060dc8a2e643018d6297f7265df726b} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(1,4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:35:09.853 [DEBU] {d463818546643018ea9b8613b763e083} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:35:09.855 [DEBU] {d463818546643018ea9b8613b763e083} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `type`=1
+2025-03-26 23:35:09.857 [DEBU] {d463818546643018ea9b8613b763e083} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:35:09.858 [DEBU] {d463818546643018ea9b8613b763e083} [  0 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `type`=1 LIMIT 0,10
+2025-03-26 23:35:09.861 [DEBU] {d463818546643018ea9b8613b763e083} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:35:09.862 [DEBU] {d463818546643018ea9b8613b763e083} [  1 ms] [default] [myshop] [rows:3  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(1,4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:39:12.851 [DEBU] {b09ce6e66a6430180b42ac52140a1502} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:39:12.854 [DEBU] {b09ce6e66a6430180b42ac52140a1502} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`=8) AND (`type`=1)
+2025-03-26 23:39:19.508 [DEBU] {b09ce6e66a6430180b42ac52140a1502} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:39:19.510 [DEBU] {b09ce6e66a6430180b42ac52140a1502} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE (`user_id`=8) AND (`type`=1) LIMIT 0,10
+2025-03-26 23:39:19.512 [DEBU] {b09ce6e66a6430180b42ac52140a1502} [  1 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:39:19.514 [DEBU] {b09ce6e66a6430180b42ac52140a1502} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:39:35.171 [DEBU] {5c3f5ca5836430180c42ac5281560ad3} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`=8) AND (`type`=2)
+2025-03-26 23:39:35.173 [DEBU] {5c3f5ca5836430180c42ac5281560ad3} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE (`user_id`=8) AND (`type`=2) LIMIT 0,10
+2025-03-26 23:39:35.175 [DEBU] {5c3f5ca5836430180c42ac5281560ad3} [  2 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-26 23:39:35.177 [DEBU] {5c3f5ca5836430180c42ac5281560ad3} [  2 ms] [default] [myshop] [rows:3  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:40:05.752 [DEBU] {88ddec6a8b6430180e42ac524db74500} [  3 ms] [default] [myshop] [rows:12 ] SHOW FULL COLUMNS FROM `user_info`
+2025-03-26 23:40:05.754 [DEBU] {ac15366b8b6430180f42ac522f8647bc} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`name`='yee') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:40:05.756 [DEBU] {c0be556b8b6430181042ac5298ef1d11} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`id`='6') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:40:21.587 [DEBU] {bc41d81a8f6430181142ac52f4097bc7} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`=6) AND (`type`=2)
+2025-03-26 23:40:27.102 [DEBU] {e07a7763906430181242ac526aaf6a71} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`=6) AND (`type`=1)
+2025-03-26 23:40:32.606 [DEBU] {20569aab916430181342ac5223d90cbb} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `user_id`=6
+2025-03-26 23:40:45.689 [DEBU] {80d065b7946430181542ac5291e213b6} [  2 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`name`='yee1') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:40:45.691 [DEBU] {c0299fb7946430181642ac524316a1df} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`avatar`,`password`,`user_salt`,`sex`,`status`,`sign`,`secret_answer`,`created_at`,`updated_at`,`deleted_at` FROM `user_info` WHERE (`id`='8') AND `deleted_at` IS NULL LIMIT 1
+2025-03-26 23:41:03.942 [DEBU] {1cc360f7986430181742ac52c26a743e} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `user_id`=8
+2025-03-26 23:41:03.943 [DEBU] {1cc360f7986430181742ac52c26a743e} [  1 ms] [default] [myshop] [rows:6  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `user_id`=8 LIMIT 0,10
+2025-03-26 23:41:03.944 [DEBU] {1cc360f7986430181742ac52c26a743e} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:41:03.946 [DEBU] {1cc360f7986430181742ac52c26a743e} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:42:02.212 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:42:02.214 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `user_id`=8
+2025-03-26 23:42:02.216 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:42:02.217 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  0 ms] [default] [myshop] [rows:6  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `user_id`=8 LIMIT 0,10
+2025-03-26 23:42:02.219 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  1 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:42:02.220 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  0 ms] [default] [myshop] [rows:2  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:42:02.222 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  1 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-26 23:42:02.224 [DEBU] {907a3c88a6643018c0371b1b380b1027} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:42:43.550 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  2 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:42:43.553 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `user_id`=8
+2025-03-26 23:42:59.162 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:42:59.164 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  1 ms] [default] [myshop] [rows:6  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `user_id`=8 LIMIT 0,10
+2025-03-26 23:42:59.166 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:42:59.168 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:42:59.170 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  1 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-26 23:42:59.172 [DEBU] {c0f6aeeead6430185124aa33e81df0f5} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:46:44.677 [DEBU] {508e37dee5643018e80f0f0a622bf0f4} [  3 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:46:44.679 [DEBU] {508e37dee5643018e80f0f0a622bf0f4} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `user_id`='CtxUserId'
+2025-03-26 23:47:20.835 [DEBU] {80af9db7f06430184eb0122fd097c017} [  2 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `collection_info`
+2025-03-26 23:47:20.837 [DEBU] {80af9db7f06430184eb0122fd097c017} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE `user_id`=8
+2025-03-26 23:47:20.839 [DEBU] {80af9db7f06430184eb0122fd097c017} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-26 23:47:20.841 [DEBU] {80af9db7f06430184eb0122fd097c017} [  1 ms] [default] [myshop] [rows:6  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE `user_id`=8 LIMIT 0,10
+2025-03-26 23:47:20.843 [DEBU] {80af9db7f06430184eb0122fd097c017} [  1 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-26 23:47:20.845 [DEBU] {80af9db7f06430184eb0122fd097c017} [  1 ms] [default] [myshop] [rows:5  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:47:20.847 [DEBU] {80af9db7f06430184eb0122fd097c017} [  2 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-26 23:47:20.849 [DEBU] {80af9db7f06430184eb0122fd097c017} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,5,8,9,10,73)) AND `deleted_at` IS NULL
+2025-03-26 23:47:30.536 [DEBU] {7c2b2cfaf26430184fb0122f4e532d9b} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`=8) AND (`type`=1)
+2025-03-26 23:47:30.537 [DEBU] {7c2b2cfaf26430184fb0122f4e532d9b} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE (`user_id`=8) AND (`type`=1) LIMIT 0,10
+2025-03-26 23:47:30.538 [DEBU] {7c2b2cfaf26430184fb0122f4e532d9b} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,5)) AND `deleted_at` IS NULL
+2025-03-26 23:47:40.689 [DEBU] {dc506557f564301851b0122fdf0ac51b} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `collection_info` WHERE (`user_id`=8) AND (`type`=2)
+2025-03-26 23:47:40.690 [DEBU] {dc506557f564301851b0122fdf0ac51b} [  1 ms] [default] [myshop] [rows:4  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `collection_info` WHERE (`user_id`=8) AND (`type`=2) LIMIT 0,10
+2025-03-26 23:47:40.690 [DEBU] {dc506557f564301851b0122fdf0ac51b} [  0 ms] [default] [myshop] [rows:3  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(8,9,10,73)) AND `deleted_at` IS NULL
