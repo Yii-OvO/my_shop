@@ -19,6 +19,7 @@ import (
 	_ "my_shop/internal/logic/middleware"
 	_ "my_shop/internal/logic/permission"
 	_ "my_shop/internal/logic/position"
+	_ "my_shop/internal/logic/praise"
 	_ "my_shop/internal/logic/role"
 	_ "my_shop/internal/logic/rotation"
 	_ "my_shop/internal/logic/session"

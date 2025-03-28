@@ -1,0 +1,23 @@
+2025-03-28 13:14:34.324 [DEBU] {d81cae1592df3018663f202e32e8a0bc} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `praise_info`
+2025-03-28 13:14:34.346 [DEBU] {d81cae1592df3018663f202e32e8a0bc} [ 18 ms] [default] [myshop] [rows:1  ] INSERT INTO `praise_info`(`user_id`,`type`,`object_id`,`created_at`,`updated_at`) VALUES(8,1,4,'2025-03-28 13:14:34','2025-03-28 13:14:34') 
+2025-03-28 13:14:42.661 [DEBU] {a0f9de0694df3018673f202e375890e8} [  5 ms] [default] [myshop] [rows:1  ] INSERT INTO `praise_info`(`user_id`,`type`,`object_id`,`created_at`,`updated_at`) VALUES(8,2,8,'2025-03-28 13:14:42','2025-03-28 13:14:42') 
+2025-03-28 13:14:52.724 [DEBU] {00636b5e96df3018683f202ee7336669} [  9 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE (`user_id`=8) AND (`type`=1)
+2025-03-28 13:14:52.727 [DEBU] {00636b5e96df3018683f202ee7336669} [  2 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-28 13:14:52.728 [DEBU] {00636b5e96df3018683f202ee7336669} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `praise_info` WHERE (`user_id`=8) AND (`type`=1) LIMIT 0,10
+2025-03-28 13:14:52.730 [DEBU] {00636b5e96df3018683f202ee7336669} [  1 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-28 13:14:52.732 [DEBU] {00636b5e96df3018683f202ee7336669} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4)) AND `deleted_at` IS NULL
+2025-03-28 13:15:00.113 [DEBU] {48ff531798df3018693f202e6d646628} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE (`user_id`=8) AND (`type`=2)
+2025-03-28 13:15:00.114 [DEBU] {48ff531798df3018693f202e6d646628} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `praise_info` WHERE (`user_id`=8) AND (`type`=2) LIMIT 0,10
+2025-03-28 13:15:00.116 [DEBU] {48ff531798df3018693f202e6d646628} [  1 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-28 13:15:00.137 [DEBU] {48ff531798df3018693f202e6d646628} [ 20 ms] [default] [myshop] [rows:1  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(8)) AND `deleted_at` IS NULL
+2025-03-28 13:15:06.161 [DEBU] {e8ddb17f99df30186a3f202e65762ac2} [  2 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE `user_id`=8
+2025-03-28 13:15:06.162 [DEBU] {e8ddb17f99df30186a3f202e65762ac2} [  1 ms] [default] [myshop] [rows:2  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `praise_info` WHERE `user_id`=8 LIMIT 0,10
+2025-03-28 13:15:06.172 [DEBU] {e8ddb17f99df30186a3f202e65762ac2} [  9 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(4,8)) AND `deleted_at` IS NULL
+2025-03-28 13:15:06.174 [DEBU] {e8ddb17f99df30186a3f202e65762ac2} [  2 ms] [default] [myshop] [rows:2  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(4,8)) AND `deleted_at` IS NULL
+2025-03-28 13:15:40.201 [DEBU] {5450ee6ba1df30186b3f202e5bfd9019} [ 14 ms] [default] [myshop] [rows:1  ] DELETE FROM `praise_info` WHERE `user_id`=8 AND `object_id`=4 AND `type`=1
+2025-03-28 13:15:43.101 [DEBU] {0ce6ab19a2df30186c3f202ebc5dd927} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE `user_id`=8
+2025-03-28 13:15:43.103 [DEBU] {0ce6ab19a2df30186c3f202ebc5dd927} [  2 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`created_at`,`updated_at` FROM `praise_info` WHERE `user_id`=8 LIMIT 0,10
+2025-03-28 13:15:43.112 [DEBU] {0ce6ab19a2df30186c3f202ebc5dd927} [  9 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(8)) AND `deleted_at` IS NULL
+2025-03-28 13:15:43.114 [DEBU] {0ce6ab19a2df30186c3f202ebc5dd927} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(8)) AND `deleted_at` IS NULL
+2025-03-28 13:16:04.270 [DEBU] {a4a9cc06a7df30186d3f202e52c6f13f} [ 11 ms] [default] [myshop] [rows:1  ] DELETE FROM `praise_info` WHERE `id`=10
+2025-03-28 13:16:07.399 [DEBU] {3447e8c1a7df30186e3f202e193898e7} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE `user_id`=8
