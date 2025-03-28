@@ -101,6 +101,7 @@ var (
 						controller.User.UpdatePassword, // 当前用户修改密码
 						controller.Collection,          // 收藏
 						controller.Praise,              // 点赞
+						controller.Comment,             // 评论
 					)
 				})
 			})

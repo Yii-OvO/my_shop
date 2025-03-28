@@ -21,3 +21,26 @@
 2025-03-28 13:15:43.114 [DEBU] {0ce6ab19a2df30186c3f202ebc5dd927} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(8)) AND `deleted_at` IS NULL
 2025-03-28 13:16:04.270 [DEBU] {a4a9cc06a7df30186d3f202e52c6f13f} [ 11 ms] [default] [myshop] [rows:1  ] DELETE FROM `praise_info` WHERE `id`=10
 2025-03-28 13:16:07.399 [DEBU] {3447e8c1a7df30186e3f202e193898e7} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE `user_id`=8
+2025-03-28 13:53:49.155 [DEBU] {b0ada55cb6e13018b7441326362207a0} [  4 ms] [default] [myshop] [rows:6  ] SHOW FULL COLUMNS FROM `praise_info`
+2025-03-28 13:53:49.156 [DEBU] {b0ada55cb6e13018b7441326362207a0} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `praise_info` WHERE `user_id`=8
+2025-03-28 13:54:14.005 [DEBU] {e05c1f26bce13018b844132674fc16a5} [  3 ms] [default] [myshop] [rows:9  ] SHOW FULL COLUMNS FROM `comment_info`
+2025-03-28 13:54:14.028 [DEBU] {e05c1f26bce13018b844132674fc16a5} [ 22 ms] [default] [myshop] [rows:1  ] INSERT INTO `comment_info`(`parent_id`,`user_id`,`object_id`,`type`,`content`,`created_at`,`updated_at`) VALUES(74,8,5,1,'fugiat incididunt sed','2025-03-28 13:54:14','2025-03-28 13:54:14') 
+2025-03-28 13:54:21.489 [DEBU] {482b7ae3bde13018b94413263b4482e5} [ 14 ms] [default] [myshop] [rows:1  ] INSERT INTO `comment_info`(`parent_id`,`user_id`,`object_id`,`type`,`content`,`created_at`,`updated_at`) VALUES(74,8,9,2,'fugiat incididunt sed','2025-03-28 13:54:21','2025-03-28 13:54:21') 
+2025-03-28 13:54:27.381 [DEBU] {980b7f43bfe13018ba441326614cec9b} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `comment_info` WHERE ((`user_id`=8) AND (`type`=2)) AND `deleted_at` IS NULL
+2025-03-28 13:54:27.383 [DEBU] {980b7f43bfe13018ba441326614cec9b} [  1 ms] [default] [myshop] [rows:23 ] SHOW TABLES
+2025-03-28 13:54:27.384 [DEBU] {980b7f43bfe13018ba441326614cec9b} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`parent_id`,`content`,`created_at`,`updated_at` FROM `comment_info` WHERE ((`user_id`=8) AND (`type`=2)) AND `deleted_at` IS NULL LIMIT 0,10
+2025-03-28 13:54:27.386 [DEBU] {980b7f43bfe13018ba441326614cec9b} [  1 ms] [default] [myshop] [rows:11 ] SHOW FULL COLUMNS FROM `article_info`
+2025-03-28 13:54:27.387 [DEBU] {980b7f43bfe13018ba441326614cec9b} [  0 ms] [default] [myshop] [rows:1  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(9)) AND `deleted_at` IS NULL
+2025-03-28 13:54:36.850 [DEBU] {dceaf777c1e13018bb4413262979dc21} [  0 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `comment_info` WHERE ((`user_id`=8) AND (`type`=1)) AND `deleted_at` IS NULL
+2025-03-28 13:54:36.852 [DEBU] {dceaf777c1e13018bb4413262979dc21} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`parent_id`,`content`,`created_at`,`updated_at` FROM `comment_info` WHERE ((`user_id`=8) AND (`type`=1)) AND `deleted_at` IS NULL LIMIT 0,10
+2025-03-28 13:54:36.854 [DEBU] {dceaf777c1e13018bb4413262979dc21} [  1 ms] [default] [myshop] [rows:15 ] SHOW FULL COLUMNS FROM `goods_info`
+2025-03-28 13:54:36.856 [DEBU] {dceaf777c1e13018bb4413262979dc21} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(5)) AND `deleted_at` IS NULL
+2025-03-28 13:54:46.153 [DEBU] {882d69a2c3e13018bc4413267c53ebb5} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `comment_info` WHERE (`user_id`=8) AND `deleted_at` IS NULL
+2025-03-28 13:54:46.154 [DEBU] {882d69a2c3e13018bc4413267c53ebb5} [  0 ms] [default] [myshop] [rows:2  ] SELECT `id`,`user_id`,`object_id`,`type`,`parent_id`,`content`,`created_at`,`updated_at` FROM `comment_info` WHERE (`user_id`=8) AND `deleted_at` IS NULL LIMIT 0,10
+2025-03-28 13:54:46.155 [DEBU] {882d69a2c3e13018bc4413267c53ebb5} [  0 ms] [default] [myshop] [rows:2  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(5,9)) AND `deleted_at` IS NULL
+2025-03-28 13:54:46.157 [DEBU] {882d69a2c3e13018bc4413267c53ebb5} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(5,9)) AND `deleted_at` IS NULL
+2025-03-28 13:55:22.403 [DEBU] {8c655012cce13018bd441326611afeef} [ 13 ms] [default] [myshop] [rows:1  ] UPDATE `comment_info` SET `deleted_at`='2025-03-28 13:55:22' WHERE (`user_id`=8 AND `id`=12) AND `deleted_at` IS NULL
+2025-03-28 13:55:26.057 [DEBU] {bc06e0eccce13018be441326bde49dbe} [  1 ms] [default] [myshop] [rows:1  ] SELECT COUNT(1) FROM `comment_info` WHERE (`user_id`=8) AND `deleted_at` IS NULL
+2025-03-28 13:55:26.059 [DEBU] {bc06e0eccce13018be441326bde49dbe} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`user_id`,`object_id`,`type`,`parent_id`,`content`,`created_at`,`updated_at` FROM `comment_info` WHERE (`user_id`=8) AND `deleted_at` IS NULL LIMIT 0,10
+2025-03-28 13:55:26.061 [DEBU] {bc06e0eccce13018be441326bde49dbe} [  1 ms] [default] [myshop] [rows:1  ] SELECT `id`,`title`,`desc`,`pic_url` FROM `article_info` WHERE (`id` IN(9)) AND `deleted_at` IS NULL
+2025-03-28 13:55:26.062 [DEBU] {bc06e0eccce13018be441326bde49dbe} [  1 ms] [default] [myshop] [rows:0  ] SELECT `id`,`name`,`pic_url`,`price` FROM `goods_info` WHERE (`id` IN(9)) AND `deleted_at` IS NULL
