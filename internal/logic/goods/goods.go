@@ -3,7 +3,10 @@ package goods
 import (
 	"context"
 	"github.com/gogf/gf/v2/frame/g"
+	"github.com/gogf/gf/v2/util/gconv"
+	"my_shop/internal/consts"
 	"my_shop/internal/dao"
+	"my_shop/internal/logic/collection"
 	"my_shop/internal/model"
 	"my_shop/internal/model/entity"
 	"my_shop/internal/service"
@@ -85,5 +88,10 @@ func (s *sGoods) Detail(ctx context.Context, in model.GoodsDetailInput) (out mod
 	if err != nil {
 		return model.GoodsDetailOutput{}, err
 	}
+	out.IsCollection, err = collection.CheckCollection(ctx, model.CheckCollectionInput{
+		UserId:   gconv.Uint(ctx.Value(consts.CtxUserId)),
+		ObjectId: in.Id,
+		Type:     consts.CollectionTypeGoods,
+	})
 	return
 }

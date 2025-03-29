@@ -2,6 +2,7 @@ package model
 
 import (
 	"github.com/gogf/gf/v2/os/gtime"
+	"my_shop/internal/model/do"
 )
 
 type AddCommentInput struct {
@@ -51,4 +52,9 @@ type CommentListOutputItem struct {
 	Article   ArticleItem `json:"article" orm:"with:id=object_id"`
 	CreatedAt *gtime.Time `json:"created_at"` // 创建时间
 	UpdatedAt *gtime.Time `json:"updated_at"` // 修改时间
+}
+
+type CommentInfoBase struct {
+	do.CommentInfo
+	UserInfo UserInfoBase `json:"user" orm:"with:id=user_id"`
 }

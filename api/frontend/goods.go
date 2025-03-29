@@ -25,5 +25,5 @@ type GoodsDetailRes struct {
 	entity.GoodsInfo
 	Options   interface{} `json:"options"` // 规格sku
 	Comments  interface{} `json:"comments"`
-	IsComment bool        `json:"is_comment"`
+	IsCollect bool        `json:"is_collect"` // todo 需优化为单独一个接口，原因是判断是否已收藏需要获取当前登录用户id
 }

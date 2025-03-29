@@ -1,5 +1,7 @@
 package model
 
+import "github.com/gogf/gf/v2/frame/g"
+
 type RegisterInput struct {
 	Name         string `json:"name"`
 	Avatar       string `json:"avatar"`
@@ -28,4 +30,14 @@ type UpdatePasswordInput struct {
 
 type UpdatePasswordOutput struct {
 	Id uint
+}
+
+type UserInfoBase struct {
+	g.Meta `orm:"table:user_info"`
+	Id     uint
+	Name   string
+	Avatar string
+	Sex    uint8
+	Sign   string
+	Status uint8
 }

@@ -62,7 +62,8 @@ type GoodsDetailInput struct {
 // GoodsDetailOutput todo 替换成do层的模型结构体进行静态关联
 type GoodsDetailOutput struct {
 	do.GoodsInfo
-	Options   []*do.GoodsOptionsInfo `orm:"with:goods_id=id"` // 规格sku
-	Comments  []*do.CommentInfo      `orm:"with:object_id=id, where:type=1"`
-	IsComment bool
+	Options []*do.GoodsOptionsInfo `orm:"with:goods_id=id"` // 规格sku
+	//Comments  []*do.CommentInfo      `orm:"with:object_id=id, where:type=1"`
+	Comments     []*CommentInfoBase `orm:"with:object_id=id, where:type=1"`
+	IsCollection bool
 }
