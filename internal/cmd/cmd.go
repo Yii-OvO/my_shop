@@ -64,7 +64,10 @@ var (
 						controller.Category,        //商品分类管理
 						controller.Coupon,          //优惠券管理
 						controller.UserCoupon,      //用户优惠卷管理
-						controller.Goods,           //商品管理
+						controller.Goods.Create,    //商品管理
+						controller.Goods.Update,    //商品管理
+						controller.Goods.Delete,    //商品管理
+						controller.Goods.List,      //商品管理
 						controller.GoodsOptions,    //商品规格管理
 						controller.Article,         //文章管理
 					)
@@ -88,6 +91,8 @@ var (
 					// todo
 					controller.User.Register,         // 用户注册
 					controller.Rotation.ListFrontend, // 前台轮播图
+					controller.Goods.FrontendList,    // 商品
+					controller.Goods.Detail,          // 商品
 				)
 				// 需要登录鉴权的路由组
 				group.Group("/", func(group *ghttp.RouterGroup) {
